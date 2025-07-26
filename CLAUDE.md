@@ -1,0 +1,134 @@
+# Claude Code Configuration
+
+This configuration helps Claude Code understand your development environment, standards, and preferences.
+
+## Development Standards
+
+### Primary References
+1. **STANDARDS.md** - Located at `~/Developer/STANDARDS.md`
+   - Overall architectural guidelines
+   - Technology stack specifications
+   - Development workflow standards
+   - Quality requirements
+
+2. **Rules Directory** - Located at `~/.claude/rules/`
+   - Detailed implementation rules
+   - Platform-specific requirements
+   - Architectural patterns
+   - Tool configurations
+
+### Quick Access to Rules
+- **General**: product_layout, documentation_and_ai_guidance
+- **Turborepo**: tooling, monorepo_structure, state_management, api_and_data_flow
+- **AI Service**: ai_service_architecture, ai_agent_instructions
+- **Apple**: project_structure, architecture_patterns, ui_ux_patterns, networking_layer
+
+## Command System
+
+### Available Commands
+- `/user:prime` - Initialize session context
+- `/user:create` - Create new project ecosystem
+- `/user:build` - Implement features
+- `/user:vision` - Explore creative possibilities
+- `/user:design` - Design system development
+- `/user:brand` - Production readiness
+- `/user:docs` - Documentation audit
+- `/user:diagram` - Visual architecture
+- `/user:ecosystem` - Meta-level ecosystem management
+
+### Command Integration
+All commands:
+1. Share session state via `.claude/session/current/`
+2. Accept universal inputs (URLs, code, files, images)
+3. Follow standardized output formats
+4. Suggest logical next commands
+5. Enforce architectural rules
+
+## Project Patterns
+
+### Repository Structure
+Every project consists of:
+- `[projectName]-xyz` - Web platform (Turborepo)
+- `[projectName]-ai` - AI service (Mastra)
+- `[projectName]-apple` - iOS/macOS app (Swift)
+- `[projectName]-docs` - Documentation (AI-optimized)
+
+### Technology Stack
+- **Web**: Next.js 15+, React 19+, TypeScript, Tailwind CSS v4
+- **State**: Jotai (UI), SWR (server state)
+- **Auth**: Clerk
+- **Database**: PostgreSQL with Prisma
+- **AI**: Mastra framework
+- **Analytics**: PostHog
+- **Monitoring**: Sentry
+
+### Development Workflow
+1. Always run `/user:prime` at session start
+2. Use `/user:ecosystem audit` to check standards
+3. Create projects with `/user:create` (zero config)
+4. Implement with `/user:build`
+5. Document continuously
+
+## AI Development Principles
+
+### Documentation First
+- Every major directory needs CLAUDE.md
+- All exports need TSDoc/JSDoc
+- Agent instructions in XML format
+- Machine-readable indexes for navigation
+
+### Pattern Recognition
+- Learn from existing projects
+- Apply consistent patterns
+- Enforce standards automatically
+- Extract wisdom from collective work
+
+### Extended Thinking
+- Use extended thinking for complex tasks
+- Show reasoning transparently
+- Consider alternatives
+- Include potential issues
+
+## Quality Standards
+
+### Before Committing
+- [ ] TypeScript compiles without errors
+- [ ] Biome formatting applied
+- [ ] No console.log statements
+- [ ] Error boundaries implemented
+- [ ] Loading states handled
+- [ ] Mobile responsive
+- [ ] Accessibility checked
+- [ ] Documentation updated
+
+## Agent Delegation
+
+Use specialized agents automatically when user requests match their expertise:
+- Design references → recreate-design
+- Simplification → simplify-design  
+- Polish → polish-interface
+- Technical depth → stack-expert-dev
+- Code review → audit-codebase
+- Product vision → envision-product
+- Quick builds → build-anything
+
+For complex requests spanning multiple domains, use orchestrate-work.
+
+## Environment Specifics
+
+### Working Directories
+- Primary: `~/Developer`
+- Apps: `~/Developer/apps`
+- Docs: `~/Developer/docs`
+- Personal: `~/.claude`
+
+### Key Locations
+- Standards: `~/Developer/STANDARDS.md`
+- Rules: `~/.claude/rules/`
+- Commands: `~/.claude/commands/`
+- Agents: `~/.claude/agents/`
+- Roles: `~/.claude/roles/`
+
+---
+
+*This configuration ensures Claude Code operates with full awareness of your development ecosystem and standards.*
