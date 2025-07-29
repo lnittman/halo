@@ -1,78 +1,186 @@
-# Halo - AI Assistant Configuration System
+# 🐙 halo
 
-A modular, portable configuration system for AI coding assistants (Claude Code, GitHub Copilot, Cursor, etc.)
+minimalist coding agent system with personality.
 
-## Overview
+## 🦉 what is halo?
 
-Halo provides a unified way to configure AI assistants with:
-- **Commands**: High-level workflows and task patterns
-- **Agents**: Specialized AI personalities for different tasks
-- **Roles**: Expert personas and functional specialists
-- **Rules**: Universal coding standards and patterns
+halo transforms verbose AI interactions into clean, emoji-rich experiences. think of it as a design system for coding agents - making them more human, more fun, more you.
 
-## Structure
+### 🦌 key features
 
-```
-halo/
-├── commands/           # Universal command concepts
-├── agents/            # Task-focused AI agents
-├── roles/             # Expert personas & specialists
-│   ├── personas/     # Character-based (Rick Rubin, Dieter Rams)
-│   └── functions/    # Job-based (architect, engineer)
-├── rules/            # Coding standards & patterns
-└── docs/             # Documentation
-```
+- **lowercase vibes** - relaxed, approachable tone
+- **emoji-rich** - functional emojis for clarity
+- **clean output** - no walls of text
+- **personality** - subtle, not overwhelming
 
-## Installation
-
-### For Claude Code
+## 🦅 quick start
 
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/halo ~/.halo
-
-# Symlink to Claude directory
-ln -s ~/.halo ~/.claude
+# use any halo command
+/prime    # understand your project
+/build    # implement features
+/create   # scaffold new projects
+/vision   # explore possibilities
 ```
 
-### For Other Tools
+## 🐐 structure
 
-See adapters in `HALO_REPO_STRUCTURE.md` for tool-specific setup.
+```
+.halo/
+├── 🦒 README.md           # you are here
+├── 🦒 halo-style-guide.md # the vibe
+├── 🦉 commands/           # all commands
+├── 🧩 components/         # reusable parts
+├── 🐯 agents/            # ai personalities
+├── 🐨 roles/             # expert personas
+└── 🐑 rules/             # coding standards
+```
 
-## Key Features
+## 🦆 the halo style
 
-### Commands
-- `/prime` - Initialize context
-- `/build` - Execute implementations
-- `/create` - Create new projects
-- `/vision` - Explore possibilities
-- `/design` - Design systems
-- `/audit` - Code quality checks
+### text rules
+- **lowercase everything** (except acronyms: AI, API, etc.)
+- **functional emoji** (not decoration)
+- **concise & direct** (no fluff)
 
-### Agents
-- `build-anything` - Rapid prototyping
-- `recreate-design` - Copy UI/UX patterns
-- `simplify-design` - Minimalist refactoring
-- `polish-interface` - Final touches
-- `orchestrate-work` - Meta coordination
+### example output
+```markdown
+## 🐸 build complete
 
-### Roles
-**Personas**: Rick Rubin, Dieter Rams, Jony Ive, Teenage Engineering
-**Functions**: Full-Stack Architect, AI Integration Specialist, Product Manager
+**created**: 5 files
+**time**: 1.3s 🐆
+**next**: [TEST] [DEPLOY]
+```
 
-## Philosophy
+### not this
+```markdown
+## Build Successfully Completed! 🎉🎊🥳
 
-Halo embodies the principle that AI assistants should:
-1. Understand context deeply
-2. Apply consistent patterns
-3. Delegate to specialists
-4. Maintain high standards
-5. Enable creative exploration
+I've successfully created 5 new files for you...
+[wall of text continues]
+```
 
-## Contributing
+## 🦫 commands
 
-Feel free to submit issues and enhancement requests!
+### 🦊 `/prime`
+understand your project context instantly
 
-## License
+### 🦫 `/build`
+transform ideas into working code
 
-MIT
+### 🐱 `/create`
+scaffold complete project ecosystems
+
+### 🦋 `/vision`
+explore transformative possibilities
+
+### 🦜 `/design`
+audit and document design systems
+
+### 🐛 `/docs`
+comprehensive documentation operations
+
+### 🦄 `/brand`
+create world-class brand identities
+
+## 🐯 agents
+
+each agent has a personality that matches their purpose:
+
+- **simplify-design** - minimalist refactoring expert
+- **polish-interface** - detail-oriented perfectionist
+- **audit-codebase** - thorough quality checker
+- **tech-docs** - documentation aggregation specialist
+- **github-whisperer** - git and github operations expert
+- **cloudflare-whisperer** - cloudflare services specialist
+- **test-coverage** - comprehensive testing specialist
+- **dependency-doctor** - package management expert
+- **linear-whisperer** - project tracking sync specialist
+
+## 🐨 roles
+
+expert personas and functional specialists:
+
+**personas**:
+- rick rubin - zen creative guidance
+- dieter rams - minimalist design philosophy
+- jony ive - obsessive simplification
+- teenage engineering - playful utility
+
+**functions**:
+- full-stack architect
+- ai integration specialist
+- product manager
+- ux researcher
+
+## 🦝 philosophy
+
+inspired by:
+- **teenage engineering** - constraints breed creativity
+- **dieter rams** - less, but better
+- **80s-90s computing** - when interfaces had soul
+
+## 🐙 customization
+
+### modify commands
+edit any `.md` file in `/commands/` to adjust behavior
+
+### change style
+update `halo-style-guide.md` to match your vibe
+
+### add agents
+drop new personalities in `/agents/` folder
+
+### create roles
+add expert personas in `/roles/` directory
+
+## 🐆 tips
+
+1. **be direct** - halo understands context
+2. **be concise** - commands work without prefixes
+3. **chain commands** - they share context
+4. **trust the vibe** - let halo's personality shine
+
+## 🦓 examples
+
+### understand a project
+```bash
+/prime
+# 🐸 instant context about your codebase
+```
+
+### build a feature
+```bash
+/build add dark mode to settings
+# 🐸 implements with your patterns
+```
+
+### create an app
+```bash
+/create weather-app
+# 🐸 full ecosystem scaffolded
+```
+
+## 🐍 compatibility
+
+halo works with:
+- claude code (primary)
+- github copilot
+- cursor
+- any AI that reads markdown
+
+---
+
+*remember: less noise, more signal. that's halo.*
+
+## 🦝 license
+
+MIT - do whatever makes you happy
+
+## 🐾 contributing
+
+keep it simple, keep it clean, keep it halo.
+
+---
+
+made with 🐱 by developers who prefer lowercase

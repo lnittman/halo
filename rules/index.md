@@ -8,7 +8,7 @@ This directory contains architectural rules and standards that govern all develo
 - `product_layout.md` - Overall product structure and repository organization
 - `documentation_and_ai_guidance.md` - Documentation standards for humans and AI
 
-### 2. Turborepo Rules (`*-xyz` projects)
+### 2. Turborepo Rules (`*-xyz` repositories)
 - `turborepo_tooling.md` - Required tools, dependencies, and technology stack
 - `turborepo_monorepo_structure.md` - Monorepo organization and package structure
 - `turborepo_state_management.md` - State management patterns and hierarchy
@@ -16,11 +16,11 @@ This directory contains architectural rules and standards that govern all develo
 - `turborepo_ui_patterns.md` - Common UI patterns and libraries
 - `version_guidelines.md` - Dependency version management
 
-### 3. AI Service Rules (`*-ai` projects)
+### 3. AI Service Rules (Mastra apps in Turborepo *-xzy/apps/ai)
 - `ai_service_architecture.md` - Mastra framework structure and patterns
 - `ai_agent_instructions.md` - XML format for agent instructions
 
-### 4. Apple Platform Rules (`*-apple` projects)
+### 4. Apple Platform Rules (`*-apple` repositories)
 - `apple_project_structure.md` - Xcode project and Swift package organization
 - `apple_architecture_patterns.md` - MVVM and architectural patterns
 - `apple_ui_ux_patterns.md` - Design system and interaction patterns

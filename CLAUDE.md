@@ -26,23 +26,22 @@ This configuration helps Claude Code understand your development environment, st
 ## Command System
 
 ### Available Commands
-- `/user:prime` - Initialize session context
-- `/user:create` - Create new project ecosystem
-- `/user:build` - Implement features
-- `/user:vision` - Explore creative possibilities
-- `/user:design` - Design system development
-- `/user:brand` - Production readiness
-- `/user:docs` - Documentation audit
-- `/user:diagram` - Visual architecture
-- `/user:ecosystem` - Meta-level ecosystem management
+- `/prime` - Initialize session context
+- `/create` - Create new project ecosystem
+- `/build` - Implement features
+- `/vision` - Explore creative possibilities
+- `/design` - Design system development
+- `/brand` - Production readiness
+- `/docs` - Documentation audit
+- `/diagram` - Visual architecture
+- `/ecosystem` - Meta-level ecosystem management
 
 ### Command Integration
 All commands:
-1. Share session state via `.claude/session/current/`
-2. Accept universal inputs (URLs, code, files, images)
-3. Follow standardized output formats
-4. Suggest logical next commands
-5. Enforce architectural rules
+1. Accept universal inputs (URLs, code, files, images)
+2. Follow standardized output formats
+3. Suggest logical next commands
+4. Enforce architectural rules
 
 ## Project Patterns
 
@@ -63,10 +62,10 @@ Every project consists of:
 - **Monitoring**: Sentry
 
 ### Development Workflow
-1. Always run `/user:prime` at session start
-2. Use `/user:ecosystem audit` to check standards
-3. Create projects with `/user:create` (zero config)
-4. Implement with `/user:build`
+1. Always run `/prime` at session start
+2. Use `/ecosystem audit` to check standards
+3. Create projects with `/create` (zero config)
+4. Implement with `/build`
 5. Document continuously
 
 ## AI Development Principles
@@ -104,15 +103,18 @@ Every project consists of:
 ## Agent Delegation
 
 Use specialized agents automatically when user requests match their expertise:
-- Design references → recreate-design
-- Simplification → simplify-design  
-- Polish → polish-interface
+- Documentation needs → tech-docs
+- Git/GitHub operations → github-whisperer
+- Cloudflare deployment → cloudflare-whisperer
+- Test writing/coverage → test-coverage
+- Dependency management → dependency-doctor
+- Linear sync/tracking → linear-whisperer
+- Code quality review → audit-codebase
+- Design simplification → simplify-design
+- UI polish → polish-interface
 - Technical depth → stack-expert-dev
-- Code review → audit-codebase
-- Product vision → envision-product
-- Quick builds → build-anything
 
-For complex requests spanning multiple domains, use orchestrate-work.
+For building features, handle directly in main thread rather than delegating.
 
 ## Environment Specifics
 
