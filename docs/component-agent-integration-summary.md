@@ -11,7 +11,7 @@ Summary of how command components have been integrated into the halo agent syste
 | **Analyzers** | audit-codebase, pattern-extractor | thinking-blocks, verification-patterns, output-standards | ✅ Partial |
 | **Builders** | motion-expert, 3d-artist, video-studio, polish-interface | Planning needed | ⏳ Pending |
 | **Integrations** | github-whisperer, cloudflare-whisperer, linear-whisperer | Output templates added | ✅ Partial |
-| **Specialists** | tech-docs, test-coverage, dependency-doctor, git-research | Output templates, some thinking | ✅ Partial |
+| **Specialists** | tech-docs, test-coverage, dependency-doctor, github-analyzer | Output templates, some thinking | ✅ Partial |
 | **Refiners** | simplify-design, docs-generator, stack-expert-dev, tech-researcher | Output templates added | ✅ Partial |
 | **Roles** | product-orchestrator, ai-architect, design-systems-architect | Full integration | ✅ Complete |
 

@@ -76,11 +76,11 @@ These agents integrate with external services.
 - **Purpose**: Manage dependencies
 - **Usage**: "Update all packages"
 
-#### git-research ⚠️
-- **Tools**: Bash, Read, Write, MultiEdit, Grep, Glob, WebFetch
-- **Purpose**: Analyze GitHub repos
-- **Note**: Should output reports, not modify files
-- **Action**: Consider making READ-ONLY
+#### github-analyzer ✅
+- **Tools**: Bash, Read, Grep, Glob, WebFetch, Context7, Firecrawl
+- **Purpose**: Analyze GitHub repositories by URL (not local git)
+- **Note**: Now properly READ-ONLY, analyzes remote repos only
+- **Usage**: "Analyze https://github.com/vercel/next.js"
 
 ### 🎨 Refiners (MIXED PERMISSIONS)
 
@@ -109,7 +109,7 @@ These agents integrate with external services.
 
 1. **pattern-extractor** - Remove Task tool
 2. **tech-docs** - Should generate reports, not modify files
-3. **git-research** - Should analyze and report, not modify
+3. **github-analyzer** - Now properly READ-ONLY, analyzes GitHub repos by URL
 4. **tech-researcher** - Should research and report
 
 ## 💡 How to Use Creative Agents

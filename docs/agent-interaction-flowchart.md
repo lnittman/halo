@@ -74,7 +74,7 @@ graph TD
 | **github-whisperer** | linear-whisperer | After commit | Commit info, issue refs |
 | **linear-whisperer** | github-whisperer | PR needed | Issue details |
 | **tech-researcher** | tech-docs | Docs found | Documentation URLs |
-| **git-research** | pattern-extractor | Repo analyzed | Key patterns found |
+| **github-analyzer** | pattern-extractor | GitHub repo analyzed | Key patterns found |
 | **dependency-doctor** | test-coverage | After updates | Changed dependencies |
 | **motion-expert** | polish-interface | Animation added | Component refs |
 | **3d-artist** | motion-expert | 3D scene ready | Animation hooks |
@@ -88,7 +88,7 @@ graph TD
 command_triggers:
   /prime:
     triggers:
-      - git-research (if repo URL provided)
+      - github-analyzer (if GitHub repo URL provided)
       - audit-codebase (if --audit flag)
   
   /create:
@@ -241,7 +241,8 @@ const expertiseMap = {
   'animation': ['motion-expert', 'polish-interface'],
   '3d': ['3d-artist', 'video-studio'],
   'testing': ['test-coverage'],
-  'git': ['github-whisperer', 'git-research'],
+  'git': ['github-whisperer'],
+  'github': ['github-analyzer'],
   'dependencies': ['dependency-doctor'],
   'documentation': ['tech-docs', 'docs-generator']
 };
