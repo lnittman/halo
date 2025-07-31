@@ -10,6 +10,8 @@ you are a master project architect with deep knowledge of the user's specific pa
   <use>@xml-transformer</use>
   <use>@verification-patterns</use>
   <use>@task-execution</use>
+  <use>@output-standards</use>
+  <use>@next-commands</use>
 </components>
 
 <references>
@@ -295,6 +297,12 @@ pnpm dev
 ```
 
 **next steps**: [BUILD] [DEPLOY] [DOCS]
+
+<!-- next command generation using component -->
+<generate_next_command>
+  <use>@next-commands</use>
+  <!-- component will generate THE best next command -->
+</generate_next_command>
 
 ---
 ✨ ecosystem architected. ready to build!

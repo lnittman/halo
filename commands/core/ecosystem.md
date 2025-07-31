@@ -9,6 +9,7 @@ Analyze, standardize, and evolve your entire developer ecosystem from a meta per
   <use>@verification-patterns</use>
   <use>@output-standards</use>
   <use>@task-execution</use>
+  <use>@next-commands</use>
 </components>
 
 <references>
@@ -343,6 +344,33 @@ $WISDOM_INSIGHTS
 - Malformed files → Log and skip
 - Network issues → Retry with backoff
 </error_handling>
+
+<output_format>
+## 🌍 ecosystem analysis complete
+
+**analyzed**: {{project_count}} projects  
+**standards**: {{compliance_percent}}% aligned  
+**actions**: {{action_count}} items 🌍  
+
+### 📊 key findings
+{{#each findings}}
+- {{category}}: {{finding}}
+{{/each}}
+
+### 🔄 recommended actions
+{{#each actions}}
+- [ ] {{priority}}: {{action}}
+{{/each}}
+
+<!-- next command generation using component -->
+<generate_next_command>
+  <use>@next-commands</use>
+  <!-- component will generate THE best next command -->
+</generate_next_command>
+
+---
+🌍 ecosystem mastered. your projects are now optimized.
+</output_format>
 </ecosystem_directive>
 
 $ARGUMENTS

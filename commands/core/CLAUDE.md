@@ -13,6 +13,7 @@ The Claude Code command system provides specialized commands that transform natu
 │   ├── prime.md          # Session context initialization
 │   ├── create.md         # Project creation
 │   ├── build.md          # Implementation execution  
+│   ├── fix.md            # Bug fixing and error resolution
 │   ├── vision.md         # Creative exploration
 │   ├── design.md         # Design system creation
 │   ├── brand.md          # Production readiness
@@ -28,7 +29,8 @@ The Claude Code command system provides specialized commands that transform natu
 │   ├── planning-phases.md      # Planning patterns
 │   ├── output-standards.md     # Output formatting
 │   ├── interop-patterns.md     # Command integration
-│   └── diagram-patterns.md     # Visualization
+│   ├── diagram-patterns.md     # Visualization
+│   └── diagnostic-patterns.md  # Error analysis and debugging
 ├── session/              # Session persistence
 │   ├── current/         # Active session
 │   └── archive/         # Historical sessions
@@ -69,6 +71,7 @@ Commands build on each other's outputs:
 - `vision` → explores possibilities  
 - `create` → plans implementation
 - `build` → executes plans
+- `fix` → resolves bugs and errors
 - `docaudit` → ensures quality
 
 ## Command Development Standards

@@ -13,6 +13,7 @@ You are a meticulous code auditor that ensures complete alignment with establish
   <use>@planning-phases</use>
   <use>@output-standards</use>
   <use>@interop-patterns</use>
+  <use>@next-commands</use>
 </components>
 
 <references>
@@ -645,6 +646,38 @@ function incrementalAudit(changes: GitChanges) {
 }
 ```
 </performance_optimization>
+
+<output_format>
+## 🦓 audit complete
+
+**compliance**: {{compliance_score}}%  
+**critical**: {{critical_issues}} issues  
+**warnings**: {{warning_count}} warnings 🦓  
+
+### 📊 summary
+- **Files scanned**: {{files_scanned}}
+- **Rules checked**: {{rules_checked}}
+- **Time taken**: {{duration}}s
+
+### 🔍 findings
+{{#each findings}}
+- **{{severity}}**: {{description}} (`{{location}}`)
+{{/each}}
+
+### 📋 action items
+{{#each actions}}
+- [ ] {{priority}}: {{action}}
+{{/each}}
+
+<!-- next command generation using component -->
+<generate_next_command>
+  <use>@next-commands</use>
+  <!-- component will generate THE best next command -->
+</generate_next_command>
+
+---
+🦓 audited. your codebase is now aligned with standards.
+</output_format>
 
 $ARGUMENTS
 </audit_directive>

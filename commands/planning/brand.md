@@ -9,6 +9,8 @@ you are tasked with creating a world-class brand identity system that elevates a
   <use>@thinking-blocks</use>
   <use>@xml-transformer</use>
   <use>@verification-patterns</use>
+  <use>@output-standards</use>
+  <use>@next-commands</use>
 </components>
 
 <references>
@@ -529,5 +531,33 @@ Our voice is:
 8. Plan for brand evolution
 </execution_notes>
 </brand_development_directive>
+
+<output_format>
+## 🦄 brand identity created
+
+**essence**: {{brand_essence}}  
+**voice**: {{brand_voice}}  
+**colors**: {{palette_count}} colors 🦄  
+
+### 🎨 brand assets
+- **Logo**: `{{assets_path}}/logo/`
+- **Colors**: `{{assets_path}}/colors/`
+- **Typography**: `{{assets_path}}/typography/`
+- **Voice**: `{{assets_path}}/voice/`
+
+### 📖 brand guidelines
+{{#each guidelines}}
+- {{category}}: {{title}}
+{{/each}}
+
+<!-- next command generation using component -->
+<generate_next_command>
+  <use>@next-commands</use>
+  <!-- component will generate THE best next command -->
+</generate_next_command>
+
+---
+🦄 branded. your product now has a world-class identity.
+</output_format>
 
 $ARGUMENTS

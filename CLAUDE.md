@@ -100,19 +100,19 @@ Every project consists of:
 - [ ] Accessibility checked
 - [ ] Documentation updated
 
-## Agent Delegation
+## Slash Command System
 
-Use specialized agents automatically when user requests match their expertise:
-- Documentation needs → tech-docs
-- Git/GitHub operations → github-whisperer
-- Cloudflare deployment → cloudflare-whisperer
-- Test writing/coverage → test-coverage
-- Dependency management → dependency-doctor
-- Linear sync/tracking → linear-whisperer
-- Code quality review → audit-codebase
-- Design simplification → simplify-design
-- UI polish → polish-interface
-- Technical depth → stack-expert-dev
+Use specialized slash commands when user requests match their expertise:
+- Documentation needs → `/tech-docs`
+- Git/GitHub operations → `/github-whisperer`  
+- Cloudflare deployment → `/cloudflare-whisperer`
+- Test writing/coverage → `/test-coverage`
+- Dependency management → `/dependency-doctor`
+- Linear sync/tracking → `/linear-whisperer`
+- Code quality review → `/audit-codebase`
+- Design simplification → `/simplify-design`
+- UI polish → `/polish-interface`
+- Technical depth → `/stack-expert-dev`
 
 For building features, handle directly in main thread rather than delegating.
 
@@ -127,9 +127,8 @@ For building features, handle directly in main thread rather than delegating.
 ### Key Locations
 - Standards: `~/Developer/STANDARDS.md`
 - Rules: `~/.claude/rules/`
-- Commands: `~/.claude/commands/`
-- Agents: `~/.claude/agents/`
-- Roles: `~/.claude/roles/`
+- Commands: `~/.halo/commands/`
+- Roles: `~/.halo/roles/`
 
 ---
 

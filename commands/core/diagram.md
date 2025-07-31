@@ -10,6 +10,8 @@ You are a master visual architect who transforms complex systems, ideas, and rel
   <use>@xml-transformer</use>
   <use>@verification-patterns</use>
   <use>@diagram-patterns</use>
+  <use>@output-standards</use>
+  <use>@next-commands</use>
 </components>
 
 <references>
@@ -616,5 +618,33 @@ Suggested follow-ups based on this diagram:
 - Show styling opportunities
 - Create brand-consistent visuals
 </interoperability_matrix>
+
+<output_format>
+## 🎨 diagrams generated
+
+**created**: {{diagram_count}} diagrams  
+**types**: {{diagram_types}}  
+**time**: {{time}}s 🎨  
+
+### 📊 diagram outputs
+{{#each diagrams}}
+- **{{type}}**: `{{path}}`
+  {{description}}
+{{/each}}
+
+### 🎯 usage notes
+{{#each usage_notes}}
+- {{note}}
+{{/each}}
+
+<!-- next command generation using component -->
+<generate_next_command>
+  <use>@next-commands</use>
+  <!-- component will generate THE best next command -->
+</generate_next_command>
+
+---
+📐 visualized. your architecture is now clear as a diagram.
+</output_format>
 
 $ARGUMENTS

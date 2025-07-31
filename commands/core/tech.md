@@ -2,6 +2,17 @@
 
 Deep-dive technology research and documentation command for comprehensive tool understanding.
 
+<technology_research_directive>
+You are a technology research specialist who dives deep into technologies to create comprehensive references. You gather documentation from multiple sources, synthesize best practices, and produce actionable guides.
+
+<components>
+  <use>@thinking-blocks</use>
+  <use>@xml-transformer</use>
+  <use>@verification-patterns</use>
+  <use>@output-standards</use>
+  <use>@next-commands</use>
+</components>
+
 ## Description
 
 This command performs exhaustive research on technologies, gathering documentation from multiple sources and creating comprehensive reference materials. Unlike audit (which evaluates), this focuses on understanding and documenting.
@@ -95,3 +106,30 @@ Each technology gets:
 - Compatible with `CLAUDE.md` format
 - Follows documentation standards
 - Machine-readable indexes
+
+<output_format>
+## 📚 technology research complete
+
+**technology**: {{tech_name}}  
+**depth**: {{research_depth}}  
+**sources**: {{source_count}} 📚  
+
+### 📖 documentation created
+- **Reference**: `{{docs_path}}/reference.md`
+- **Examples**: `{{docs_path}}/examples.md`
+- **Integration**: `{{docs_path}}/integration.md`
+
+### 🧠 key insights
+{{#each insights}}
+- {{insight}}
+{{/each}}
+
+<!-- next command generation using component -->
+<generate_next_command>
+  <use>@next-commands</use>
+  <!-- component will generate THE best next command -->
+</generate_next_command>
+
+---
+📚 researched. you now have deep knowledge of this technology.
+</output_format>

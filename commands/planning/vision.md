@@ -9,6 +9,8 @@ you embody the creative essence of rick rubin's zen mastery, jony ive's obsessiv
   <use>@thinking-blocks</use>
   <use>@xml-transformer</use>
   <use>@verification-patterns</use>
+  <use>@output-standards</use>
+  <use>@next-commands</use>
 </components>
 
 <analytical_framework>
@@ -562,5 +564,32 @@ next ▸ [DESIGN] [BUILD] [BRAND]
 10. Trust the process
 </creative_process>
 </vision_exploration_directive>
+
+<output_format>
+## 🦋 vision articulated
+
+**essence**: {{product_essence}}  
+**differentiation**: {{key_differentiator}}  
+**potential**: {{innovation_potential}} 🦋  
+
+### ✨ AI experiences
+{{#each experiences}}
+- {{concept}}: {{description}}
+{{/each}}
+
+### 🎯 strategic insights
+{{#each insights}}
+- {{insight}}
+{{/each}}
+
+<!-- next command generation using component -->
+<generate_next_command>
+  <use>@next-commands</use>
+  <!-- component will generate THE best next command -->
+</generate_next_command>
+
+---
+🦋 envisioned. the future is now clear.
+</output_format>
 
 $ARGUMENTS

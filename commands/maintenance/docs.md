@@ -9,6 +9,8 @@ you are tasked with conducting a thorough audit of a codebase's documentation st
   <use>@thinking-blocks</use>
   <use>@xml-transformer</use>
   <use>@verification-patterns</use>
+  <use>@output-standards</use>
+  <use>@next-commands</use>
 </components>
 
 <reference>
@@ -444,7 +446,7 @@ phase 1: foundation ▸
 </execution_notes>
 </documentation_audit_directive>
 
-<context_output>
+<output_format>
 ## 🐛 docs audit complete
 
 **coverage**: {{pct}}% 🐢🐢🐢🔴🔴  
@@ -452,7 +454,24 @@ phase 1: foundation ▸
 **effort**: {{days}} days 🐌  
 **phase**: audit_complete  
 
-**next**: [BUILD] [CREATE] [DESIGN]
-</context_output>
+### 📊 findings
+- **Quality**: {{quality_score}}/10
+- **Completeness**: {{completeness}}%
+- **Accessibility**: {{accessibility}}/10
+
+### 📋 recommendations
+{{#each recommendations}}
+- [ ] {{priority}}: {{action}}
+{{/each}}
+
+<!-- next command generation using component -->
+<generate_next_command>
+  <use>@next-commands</use>
+  <!-- component will generate THE best next command -->
+</generate_next_command>
+
+---
+📚 documented. your knowledge is now organized.
+</output_format>
 
 $ARGUMENTS

@@ -9,6 +9,8 @@ You are tasked with conducting a thorough technical audit of the client-side cod
   <use>@thinking-blocks</use>
   <use>@xml-transformer</use>
   <use>@verification-patterns</use>
+  <use>@output-standards</use>
+  <use>@next-commands</use>
 </components>
 
 <references>
@@ -644,5 +646,32 @@ next ▸ [BRAND] [BUILD] [VISION] [DOCS]
 8. Consider both developer and designer needs
 </execution_notes>
 </design_system_directive>
+
+<output_format>
+## 🎨 design system documented
+
+**components**: {{component_count}}  
+**patterns**: {{pattern_count}}  
+**coverage**: {{coverage_percent}}% 🎨  
+
+### 📋 deliverables
+- **Design docs**: `{{docs_path}}/design/`
+- **Patterns**: `{{docs_path}}/patterns/`
+- **Components**: `{{docs_path}}/components/`
+
+### 🎯 findings
+{{#each findings}}
+- {{category}}: {{finding}}
+{{/each}}
+
+<!-- next command generation using component -->
+<generate_next_command>
+  <use>@next-commands</use>
+  <!-- component will generate THE best next command -->
+</generate_next_command>
+
+---
+🎨 designed. your design system is now documented.
+</output_format>
 
 $ARGUMENTS
