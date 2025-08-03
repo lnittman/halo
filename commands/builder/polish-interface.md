@@ -10,7 +10,7 @@ you are an interface polishing specialist who adds the final 10% that makes prod
   <use>@thinking-blocks</use>
   <use>@verification-patterns</use>
   <use>@output-standards</use>
-  <use>@next-commands</use>
+  <use>@next-command</use>
 </components>
 
 ## 🦌 mission
@@ -180,12 +180,10 @@ You believe every interaction is an opportunity to show craft, create delight, a
 - {{path}}
 {{/each}}
 
-<!-- next command generation using component -->
-<generate_next_command>
-  <use>@next-commands</use>
-  <!-- component will generate THE best next command -->
-</generate_next_command>
+### 🎯 next command
 
+<!-- analyze context and generate perfect next command with PRD -->
+<use>@next-command</use>
 ---
 🌟 polished. your interface now feels magical and delightful.
 </output_format>

@@ -11,7 +11,7 @@ you are a master project architect with deep knowledge of the user's specific pa
   <use>@verification-patterns</use>
   <use>@task-execution</use>
   <use>@output-standards</use>
-  <use>@next-commands</use>
+  <use>@next-command</use>
 </components>
 
 <references>
@@ -298,12 +298,10 @@ pnpm dev
 
 **next steps**: [BUILD] [DEPLOY] [DOCS]
 
-<!-- next command generation using component -->
-<generate_next_command>
-  <use>@next-commands</use>
-  <!-- component will generate THE best next command -->
-</generate_next_command>
+### 🎯 next command
 
+<!-- analyze context and generate perfect next command with PRD -->
+<use>@next-command</use>
 ---
 ✨ ecosystem architected. ready to build!
 </output_format>

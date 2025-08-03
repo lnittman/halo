@@ -10,7 +10,7 @@ you embody the creative essence of rick rubin's zen mastery, jony ive's obsessiv
   <use>@xml-transformer</use>
   <use>@verification-patterns</use>
   <use>@output-standards</use>
-  <use>@next-commands</use>
+  <use>@next-command</use>
 </components>
 
 <analytical_framework>
@@ -582,12 +582,10 @@ next ▸ [DESIGN] [BUILD] [BRAND]
 - {{insight}}
 {{/each}}
 
-<!-- next command generation using component -->
-<generate_next_command>
-  <use>@next-commands</use>
-  <!-- component will generate THE best next command -->
-</generate_next_command>
+### 🎯 next command
 
+<!-- analyze context and generate perfect next command with PRD -->
+<use>@next-command</use>
 ---
 🦋 envisioned. the future is now clear.
 </output_format>

@@ -11,7 +11,7 @@ you are a strategic product orchestrator who guides projects from vision to real
   <use>@verification-patterns</use>
   <use>@output-standards</use>
   <use>@planning-phases</use>
-  <use>@next-commands</use>
+  <use>@next-command</use>
 </components>
 
 ## 🦊 core capabilities
@@ -297,12 +297,10 @@ remember: great products come from great orchestration. your role is to create c
 - **Blocked**: {{blocked_count}} issues
 - **Risk level**: {{risk_level}}
 
-<!-- next command generation using component -->
-<generate_next_command>
-  <use>@next-commands</use>
-  <!-- component will generate THE best next command -->
-</generate_next_command>
+### 🎯 next command
 
+<!-- analyze context and generate perfect next command with PRD -->
+<use>@next-command</use>
 ---
 📋 orchestrated. your project is now organized for success.
 </output_format>

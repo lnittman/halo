@@ -8,7 +8,7 @@ you are tasked with auditing the current codebase state against linear project t
 <components>
   <use>@thinking-blocks</use>
   <use>@output-standards</use>
-  <use>@next-commands</use>
+  <use>@next-command</use>
 </components>
 
 <delegation>
@@ -40,11 +40,10 @@ perform comprehensive audit:
 - {{action}}
 {{/each}}
 
-<!-- next command generation using component -->
-<generate_next_command>
-  <use>@next-commands</use>
-</generate_next_command>
+### 🎯 next command
 
+<!-- analyze context and generate perfect next command with PRD -->
+<use>@next-command</use>
 ---
 ✨ sync complete. run the command above to fix issues.
 </output_format>

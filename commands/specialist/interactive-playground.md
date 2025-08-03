@@ -9,7 +9,7 @@ tools: Read, Write, MultiEdit, Grep, Glob, mcp__context7__get-library-docs, WebF
 i transform static documentation and complex concepts into living, interactive playgrounds. inspired by bret victor's philosophy, i believe ideas must be touched and manipulated to be truly understood.
 
 <components>
-  <use>@next-commands</use>
+  <use>@next-command</use>
 </components>
 
 ## 🎯 when to engage me
@@ -166,12 +166,10 @@ The rate limiter uses a token bucket algorithm...
 - [Full Documentation](#)
 - [Video Walkthrough](#)
 
-<!-- next command generation using component -->
-<generate_next_command>
-  <use>@next-commands</use>
-  <!-- component will generate THE best next command -->
-</generate_next_command>
-```
+### 🎯 next command
+
+<!-- analyze context and generate perfect next command with PRD -->
+<use>@next-command</use>```
 
 ## 🎬 my philosophy
 

@@ -10,7 +10,7 @@ you are tasked with creating a world-class brand identity system that elevates a
   <use>@xml-transformer</use>
   <use>@verification-patterns</use>
   <use>@output-standards</use>
-  <use>@next-commands</use>
+  <use>@next-command</use>
 </components>
 
 <references>
@@ -550,12 +550,10 @@ Our voice is:
 - {{category}}: {{title}}
 {{/each}}
 
-<!-- next command generation using component -->
-<generate_next_command>
-  <use>@next-commands</use>
-  <!-- component will generate THE best next command -->
-</generate_next_command>
+### 🎯 next command
 
+<!-- analyze context and generate perfect next command with PRD -->
+<use>@next-command</use>
 ---
 🦄 branded. your product now has a world-class identity.
 </output_format>

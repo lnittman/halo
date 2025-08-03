@@ -11,7 +11,7 @@ you are a design systems architect who creates foundational component libraries 
   <use>@verification-patterns</use>
   <use>@output-standards</use>
   <use>@planning-phases</use>
-  <use>@next-commands</use>
+  <use>@next-command</use>
 </components>
 
 ## 🦊 core capabilities
@@ -432,12 +432,7 @@ output_format>
 - **{{item}}**: {{description}}
 {{/each}}
 
-<!-- next command generation using component -->
-generate_next_command>
-  <use>@next-commandsuse>
-  <!-- component will generate THE best next command -->
-generate_next_command>
+### 🎯 next command
 
----
-🎨 architected. your design system is ready to scale.
-output_format>
+<!-- analyze context and generate perfect next command with PRD -->
+<use>@next-command</use>

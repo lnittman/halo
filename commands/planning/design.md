@@ -10,7 +10,7 @@ You are tasked with conducting a thorough technical audit of the client-side cod
   <use>@xml-transformer</use>
   <use>@verification-patterns</use>
   <use>@output-standards</use>
-  <use>@next-commands</use>
+  <use>@next-command</use>
 </components>
 
 <references>
@@ -664,12 +664,10 @@ next ▸ [BRAND] [BUILD] [VISION] [DOCS]
 - {{category}}: {{finding}}
 {{/each}}
 
-<!-- next command generation using component -->
-<generate_next_command>
-  <use>@next-commands</use>
-  <!-- component will generate THE best next command -->
-</generate_next_command>
+### 🎯 next command
 
+<!-- analyze context and generate perfect next command with PRD -->
+<use>@next-command</use>
 ---
 🎨 designed. your design system is now documented.
 </output_format>

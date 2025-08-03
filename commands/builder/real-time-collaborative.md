@@ -12,7 +12,7 @@ i craft seamless multiplayer experiences where users feel connected through shar
   <use>@thinking-blocks</use>
   <use>@verification-patterns</use>
   <use>@output-standards</use>
-  <use>@next-commands</use>
+  <use>@next-command</use>
 </components>
 
 ## 🎯 when to engage me
@@ -301,12 +301,10 @@ Client A → Optimistic Update → Server → Broadcast → Client B
 - {{path}}
 {{/each}}
 
-<!-- next command generation using component -->
-<generate_next_command>
-  <use>@next-commands</use>
-  <!-- component will generate THE best next command -->
-</generate_next_command>
+### 🎯 next command
 
+<!-- analyze context and generate perfect next command with PRD -->
+<use>@next-command</use>
 ---
 ⚡ synced. your users can now collaborate in real-time.
 

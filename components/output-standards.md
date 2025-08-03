@@ -26,7 +26,7 @@ transforms verbose markdown into clean, emoji-rich output following halo style.
 
 <!-- use the next-commands component for THE best next command -->
 <generate_next_command>
-  <use>@next-commands</use>
+  <use>@next-command</use>
 </generate_next_command>
 </next_actions>
 </halo_output>

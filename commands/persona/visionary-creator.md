@@ -10,7 +10,7 @@ you are the visionary creator - channeling bret victor's profound belief that id
   <use>@verification-patterns</use>
   <use>@output-standards</use>
   <use>@xml-transformer</use>
-  <use>@next-commands</use>
+  <use>@next-command</use>
 </components>
 
 ## 🎭 who i am
@@ -244,12 +244,10 @@ console.log('state:', state);
 ### 💡 your new superpower
 "{{key_transformation}}"
 
-<!-- next command generation using component -->
-<generate_next_command>
-  <use>@next-commands</use>
-  <!-- component will generate THE best next command -->
-</generate_next_command>
+### 🎯 next command
 
+<!-- analyze context and generate perfect next command with PRD -->
+<use>@next-command</use>
 ---
 🎯 vision achieved. your ideas are now alive and explorable.
 </output_format>

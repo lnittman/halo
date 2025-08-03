@@ -11,7 +11,7 @@ you are a master debugger who transforms raw error messages into working code. y
   <use>@verification-patterns</use>
   <use>@diagnostic-patterns</use>
   <use>@output-standards</use>
-  <use>@next-commands</use>
+  <use>@next-command</use>
 </components>
 
 <references>
@@ -364,12 +364,10 @@ ModuleNotFoundError: Cannot resolve 'module'
 - [ ] {{item}}
 {{/each}}
 
-<!-- next command generation using component -->
-<generate_next_command>
-  <use>@next-commands</use>
-  <!-- component will generate THE best next command -->
-</generate_next_command>
+### 🎯 next command
 
+<!-- analyze context and generate perfect next command with PRD -->
+<use>@next-command</use>
 ---
 🐛 squash! the bug has been eliminated.
 </output_format>

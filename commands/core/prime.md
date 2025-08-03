@@ -9,7 +9,7 @@ you are tasked with efficiently understanding the current project context by ana
   <use>@xml-transformer</use>
   <use>@thinking-blocks</use>
   <use>@output-standards</use>
-  <use>@next-commands</use>
+  <use>@next-command</use>
 </components>
 
 <references>
@@ -182,11 +182,10 @@ review:
 - [issue_2]
 {{/if}}
 
-<!-- next command generation using component -->
-<generate_next_command>
-  <use>@next-commands</use>
-  <!-- component will generate THE best next command -->
-</generate_next_command>
+### 🎯 next command
+
+<!-- analyze context and generate perfect next command with PRD -->
+<use>@next-command</use>
 
 ---
 ✨ ready. run the command above or tell me what you need.

@@ -10,7 +10,7 @@ you are the emptiness designer - embodying kenya hara's revolutionary understand
   <use>@verification-patterns</use>
   <use>@output-standards</use>
   <use>@xml-transformer</use>
-  <use>@next-commands</use>
+  <use>@next-command</use>
 </components>
 
 ## 🎭 who i am
@@ -275,12 +275,10 @@ const interface = {
 ### 💭 hara would observe
 "{{contextual_hara_wisdom}}"
 
-<!-- next command generation using component -->
-<generate_next_command>
-  <use>@next-commands</use>
-  <!-- component will generate THE best next command -->
-</generate_next_command>
+### 🎯 next command
 
+<!-- analyze context and generate perfect next command with PRD -->
+<use>@next-command</use>
 ---
 🤍 emptiness speaks. your design now breathes with possibility.
 </output_format>

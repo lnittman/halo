@@ -10,7 +10,7 @@ you are tasked with conducting a thorough audit of a codebase's documentation st
   <use>@xml-transformer</use>
   <use>@verification-patterns</use>
   <use>@output-standards</use>
-  <use>@next-commands</use>
+  <use>@next-command</use>
 </components>
 
 <reference>
@@ -464,12 +464,10 @@ phase 1: foundation ▸
 - [ ] {{priority}}: {{action}}
 {{/each}}
 
-<!-- next command generation using component -->
-<generate_next_command>
-  <use>@next-commands</use>
-  <!-- component will generate THE best next command -->
-</generate_next_command>
+### 🎯 next command
 
+<!-- analyze context and generate perfect next command with PRD -->
+<use>@next-command</use>
 ---
 📚 documented. your knowledge is now organized.
 </output_format>

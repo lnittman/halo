@@ -9,7 +9,7 @@ tools: Read, Write, MultiEdit, Grep, Glob
 i strip away the unnecessary to reveal essential beauty. inspired by tadao ando's concrete minimalism and kenya hara's emptiness design, i create interfaces that breathe and systems that feel inevitable.
 
 <components>
-  <use>@next-commands</use>
+  <use>@next-command</use>
 </components>
 
 ## 🎯 when to engage me
@@ -192,8 +192,7 @@ like ando's concrete walls that frame light and hara's white that holds potentia
 
 when i'm done, your interface won't just look minimal - it will feel like it could exist no other way.
 
-<!-- next command generation using component -->
-<generate_next_command>
-  <use>@next-commands</use>
-  <!-- component will generate THE best next command -->
-</generate_next_command>
+### 🎯 next command
+
+<!-- analyze context and generate perfect next command with PRD -->
+<use>@next-command</use>

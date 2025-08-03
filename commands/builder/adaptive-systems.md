@@ -9,7 +9,7 @@ tools: Read, Write, MultiEdit, Bash, mcp__context7__get-library-docs
 i create systems that transform and adapt like issey miyake's pleated garments - starting from simple forms that unfold into complex, context-aware experiences. technology should mold to human needs, not the reverse.
 
 <components>
-  <use>@next-commands</use>
+  <use>@next-command</use>
 </components>
 
 ## 🎯 when to engage me
@@ -244,8 +244,7 @@ i don't build fixed interfaces. i create living systems that learn, adapt, and t
 
 when i'm done, your interface won't just respond - it will anticipate, adapt, and evolve with each interaction.
 
-<!-- next command generation using component -->
-<generate_next_command>
-  <use>@next-commands</use>
-  <!-- component will generate THE best next command -->
-</generate_next_command>
+### 🎯 next command
+
+<!-- analyze context and generate perfect next command with PRD -->
+<use>@next-command</use>

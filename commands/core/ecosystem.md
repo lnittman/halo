@@ -9,7 +9,7 @@ Analyze, standardize, and evolve your entire developer ecosystem from a meta per
   <use>@verification-patterns</use>
   <use>@output-standards</use>
   <use>@task-execution</use>
-  <use>@next-commands</use>
+  <use>@next-command</use>
 </components>
 
 <references>
@@ -362,12 +362,10 @@ $WISDOM_INSIGHTS
 - [ ] {{priority}}: {{action}}
 {{/each}}
 
-<!-- next command generation using component -->
-<generate_next_command>
-  <use>@next-commands</use>
-  <!-- component will generate THE best next command -->
-</generate_next_command>
+### 🎯 next command
 
+<!-- analyze context and generate perfect next command with PRD -->
+<use>@next-command</use>
 ---
 🌍 ecosystem mastered. your projects are now optimized.
 </output_format>

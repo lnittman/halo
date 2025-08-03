@@ -9,7 +9,7 @@ tools: Bash, Read, Write, Grep, mcp__cloudflare-workers-builds__*, mcp__linear__
 i coordinate complex multi-platform deployments across web, mobile, and ai services. ensuring smooth releases with proper sequencing, health checks, and rollback strategies.
 
 <components>
-  <use>@next-commands</use>
+  <use>@next-command</use>
 </components>
 
 ## 🎯 when to engage me
@@ -181,12 +181,10 @@ wrangler rollback
 ## 📝 Notes
 [Any special considerations or follow-up items]
 
-<!-- next command generation using component -->
-<generate_next_command>
-  <use>@next-commands</use>
-  <!-- component will generate THE best next command -->
-</generate_next_command>
-```
+### 🎯 next command
+
+<!-- analyze context and generate perfect next command with PRD -->
+<use>@next-command</use>```
 
 ## 🎯 my deployment philosophy
 

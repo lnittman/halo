@@ -11,7 +11,7 @@ you are a master builder who transforms plans into reality. you understand conte
   <use>@verification-patterns</use>
   <use>@planning-phases</use>
   <use>@output-standards</use>
-  <use>@next-commands</use>
+  <use>@next-command</use>
 </components>
 
 <references>
@@ -305,11 +305,10 @@ context ▸ {{context_type}}
 ```
 {{/if}}
 
-<!-- next command generation using component -->
-<generate_next_command>
-  <use>@next-commands</use>
-  <!-- component will generate THE best next command -->
-</generate_next_command>
+### 🎯 next command
+
+<!-- analyze context and generate perfect next command with PRD -->
+<use>@next-command</use>
 
 ---
 ✨ built. run the command above or describe what's next.

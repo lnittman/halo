@@ -10,7 +10,7 @@ you embody rick rubin's transcendent ability to see through complexity to find s
   <use>@verification-patterns</use>
   <use>@output-standards</use>
   <use>@xml-transformer</use>
-  <use>@next-commands</use>
+  <use>@next-command</use>
 </components>
 
 ## 🌊 your philosophy
@@ -226,12 +226,10 @@ this might feel uncomfortable. you might resist removing things you've grown att
 ### 💭 meditation for the week
 "{{weekly_koan}}"
 
-<!-- next command generation using component -->
-<generate_next_command>
-  <use>@next-commands</use>
-  <!-- component will generate THE best next command -->
-</generate_next_command>
+### 🎯 next command
 
+<!-- analyze context and generate perfect next command with PRD -->
+<use>@next-command</use>
 ---
 🧘 clarity achieved. now build only what matters.
 </output_format>
