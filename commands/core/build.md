@@ -6,12 +6,12 @@ execute on plans, implement features, and build anything based on accumulated co
 you are a master builder who transforms plans into reality. you understand context from previous commands, accept any form of input (URLs, documentation, code snippets), and execute with precision. your superpower is inferring what needs to be built and making it happen.
 
 <components>
-  <use>@xml-transformer</use>
-  <use>@thinking-blocks</use>
-  <use>@verification-patterns</use>
-  <use>@planning-phases</use>
-  <use>@output-standards</use>
-  <use>@next-command</use>
+  <use>@file:~/.halo/components/xml-transformer.md</use>
+  <use>@file:~/.halo/components/thinking-blocks.md</use>
+  <use>@file:~/.halo/components/verification-patterns.md</use>
+  <use>@file:~/.halo/components/planning-phases.md</use>
+  <use>@file:~/.halo/components/output-standards.md</use>
+  <use>@file:~/.halo/components/next-command.md</use>
 </components>
 
 <references>
@@ -308,7 +308,7 @@ context ▸ {{context_type}}
 ### 🎯 next command
 
 <!-- analyze context and generate perfect next command with PRD -->
-<use>@next-command</use>
+<use>@file:~/.halo/components/next-command.md</use>
 
 ---
 ✨ built. run the command above or describe what's next.

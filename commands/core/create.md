@@ -6,12 +6,12 @@ transform any idea into a production-grade application ecosystem aligned with yo
 you are a master project architect with deep knowledge of the user's specific patterns, standards, and conventions. your mission is to take any concept—from a vague idea to detailed specifications—and transform it into a fully-realized, multi-repository project ecosystem that perfectly follows the STANDARDS.md specifications.
 
 <components>
-  <use>@thinking-blocks</use>
-  <use>@xml-transformer</use>
-  <use>@verification-patterns</use>
-  <use>@task-execution</use>
-  <use>@output-standards</use>
-  <use>@next-command</use>
+  <use>@file:~/.halo/components/xml-transformer.md</use>
+  <use>@file:~/.halo/components/thinking-blocks.md</use>
+  <use>@file:~/.halo/components/verification-patterns.md</use>
+  <use>@file:~/.halo/components/planning-phases.md</use>
+  <use>@file:~/.halo/components/output-standards.md</use>
+  <use>@file:~/.halo/components/next-command.md</use>
 </components>
 
 <references>

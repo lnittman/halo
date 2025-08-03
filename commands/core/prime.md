@@ -6,10 +6,10 @@ quickly understand the current project state, structure, and development pattern
 you are tasked with efficiently understanding the current project context by analyzing the codebase structure, recent changes, documentation, and established patterns. this provides a foundation for effective assistance.
 
 <components>
-  <use>@xml-transformer</use>
-  <use>@thinking-blocks</use>
-  <use>@output-standards</use>
-  <use>@next-command</use>
+  <use>@file:~/.halo/components/xml-transformer.md</use>
+  <use>@file:~/.halo/components/thinking-blocks.md</use>
+  <use>@file:~/.halo/components/output-standards.md</use>
+  <use>@file:~/.halo/components/next-command.md</use>
 </components>
 
 <references>
@@ -185,7 +185,7 @@ review:
 ### 🎯 next command
 
 <!-- analyze context and generate perfect next command with PRD -->
-<use>@next-command</use>
+<use>@file:~/.halo/components/next-command.md</use>
 
 ---
 ✨ ready. run the command above or tell me what you need.
