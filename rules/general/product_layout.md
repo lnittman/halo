@@ -26,7 +26,7 @@ The AI service is an application within the monorepo dedicated to all AI logic.
 
 -   `src/`: The root for the AI service.
     -   `mastra/`: All Mastra AI definitions.
-        -   `agents/`: Contains definitions for each AI agent.
+        -   `agents/`: Contains definitions for each AI agent (Mastra runtime; not halo prompts).
         -   `tools/`: Contains tool definitions.
         -   `workflows/`: Multi-step AI processes.
     -   `lib/`: Shared utilities and helpers.

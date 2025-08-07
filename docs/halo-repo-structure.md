@@ -27,24 +27,24 @@ halo/
 │   ├── thinking-blocks.md
 │   ├── xml-transformer.md
 │   ├── output-standards.md
-│   ├── next-commands.md
+│   ├── next-command.md
 │   └── ...
 │
-├── agents/                        # Specialized single-purpose agents
-│   ├── builders/                 # UI/UX building agents
+├── commands/                      # Command system (specialists live here)
+│   ├── builder/                  # UI/UX building specialists
 │   │   └── polish-interface.md
-│   ├── analyzers/                # Code analysis agents
+│   ├── analyzer/                 # Code analysis specialists (READ-ONLY)
 │   │   ├── audit-codebase.md
 │   │   └── pattern-extractor.md
-│   ├── integrations/             # Service integration agents
+│   ├── integration/              # Service integrations
 │   │   ├── linear-whisperer.md
 │   │   ├── github-whisperer.md
 │   │   └── cloudflare-whisperer.md
-│   ├── specialists/              # Technical specialists
+│   ├── specialist/               # Technical specialists
 │   │   ├── tech-docs.md
 │   │   ├── test-coverage.md
 │   │   └── dependency-doctor.md
-│   └── refiners/                 # Code refinement agents
+│   └── refiner/                  # Code refinement specialists
 │       ├── simplify-design.md
 │       └── docs-generator.md
 │   │
@@ -124,29 +124,29 @@ Transform plans into reality by understanding context and executing with precisi
 - Aider: `/build` in chat
 ```
 
-### 2. Agent Metadata System
-Each agent includes metadata for tool compatibility:
+### 2. Specialist Command Metadata System
+Each specialist command includes metadata for tool compatibility:
 
 ```json
-// agents/index.json
+// commands/index.json
 {
-  "agents": {
+  "commands": {
     "tech-docs": {
       "type": "specialist",
       "category": "documentation",
-      "path": "specialists/tech-docs.md",
+      "path": "specialist/tech-docs.md",
       "tools_required": ["context7", "firecrawl", "file_ops"],
       "invoke_patterns": {
         "claude-code": "Task tool with subagent_type",
         "copilot": "@workspace mention",
-        "cursor": "Agent reference in chat",
+        "cursor": "Command reference in chat",
         "aider": "Direct prompt inclusion"
       }
     },
     "github-whisperer": {
       "type": "integration",
       "category": "git_operations",
-      "path": "integrations/github-whisperer.md",
+      "path": "integration/github-whisperer.md",
       "tools_required": ["bash", "gh_cli"],
       "proactive": true
     }
@@ -195,12 +195,12 @@ EOF
 }
 ```
 
-### 4. Unified Agent Structure
-All roles become agents with type metadata:
+### 4. Unified Role and Specialist Structure
+Roles remain personas; specialists live under `commands/*` with metadata frontmatter:
 
 ```markdown
 ---
-type: persona
+kind: role
 name: rick-rubin
 description: Zen master of creative production
 ---
@@ -212,12 +212,13 @@ description: Zen master of creative production
 
 ```markdown
 ---
-type: specialist  
+kind: specialist
 name: design-system-engineer
+location: commands/role/design-systems-architect.md
 description: Technical design system expert
 ---
 
-# Design System Engineer
+# Design Systems Architect
 
 [Content remains the same]
 ```

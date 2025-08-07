@@ -1,4 +1,4 @@
-# Claude System Design: Commands, Roles, and Agents
+# Claude System Design: Commands, Roles, and Specialists
 
 A cohesive system where modular commands serve as building blocks that can be orchestrated by agents, roles, or direct human control.
 
@@ -40,14 +40,14 @@ Examples:
 - `teenage-engineering.md` - Playful innovation
 - `design-system-engineer.md` - Technical design expertise
 
-### 3. Agents (`/agents/`) - The Specialists
-**Purpose**: Task-focused workers that orchestrate commands and channel roles
+### 3. Specialist Commands (under `/commands/`) - The Specialists
+**Purpose**: Task-focused workers implemented as commands that orchestrate other commands and channel roles
 
-Agents are verb-based specialists:
+Specialists are verb-based prompts:
 - **Action-oriented**: Named after what they do
-- **Isolated context**: Don't pollute main conversation
-- **Tool access**: Can use specific tools including commands
-- **Role channeling**: Can embody personalities from `/roles/`
+- **Isolated context**: Don’t pollute main conversation
+- **Tool access**: Use specific tool sets
+- **Role channeling**: Can embody personas from `/roles/`
 
 Examples:
 - `tech-docs` - Documentation aggregation
@@ -90,14 +90,14 @@ Commands don't need to know about agents or roles. They:
 Users can:
 - Call commands directly: `/build feature`
 - Let Claude build in main thread
-- Invoke agents for specialized tasks: "commit these changes"
+- Invoke specialist commands for focused tasks: "commit these changes" → `github-whisperer`
 - Mix approaches: Build → Test → Commit
 
 ## Delegation Intelligence
 
-### When Claude Chooses Agents
+### When Claude Chooses Specialist Commands
 
-**Task indicators** trigger agents:
+**Task indicators** trigger specialists:
 - "document X" → `tech-docs`
 - "commit this" → `github-whisperer`
 - "deploy to cloudflare" → `cloudflare-whisperer`
@@ -114,9 +114,9 @@ Users can:
 - Test coverage low → `test-coverage`
 - Dependencies outdated → `dependency-doctor`
 
-### Agent Collaboration Patterns
+### Specialist Collaboration Patterns
 
-Agents can work together:
+Specialists can work together:
 1. Claude builds → `test-coverage` → `github-whisperer`
 2. `tech-docs` researches → Claude implements → `cloudflare-whisperer` deploys
 3. `audit-codebase` → `simplify-design` → `test-coverage`

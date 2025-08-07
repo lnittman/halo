@@ -29,10 +29,9 @@ halo transforms verbose AI interactions into clean, emoji-rich experiences. thin
 .halo/
 ├── 🦒 README.md           # you are here
 ├── 🦒 halo-style-guide.md # the vibe
-├── 🦉 commands/           # all commands
+├── 🦉 commands/           # all commands (includes specialist command prompts)
 ├── 🧩 components/         # reusable parts
-├── 🐯 agents/            # ai personalities
-├── 🐨 roles/             # expert personas
+├── 🐨 roles/             # expert personas (referenced by commands)
 └── 🐑 rules/             # coding standards
 ```
 
@@ -128,8 +127,8 @@ edit any `.md` file in `/commands/` to adjust behavior
 ### change style
 update `halo-style-guide.md` to match your vibe
 
-### add agents
-drop new personalities in `/agents/` folder
+### add roles
+ drop new personas in `/roles/` folder
 
 ### create roles
 add expert personas in `/roles/` directory
