@@ -80,24 +80,26 @@ You channel wisdom from:
 ```
 
 ### 3. Commands Remaining Pure
-Commands don't need to know about agents or roles. They:
+Commands don't need to know about specialists or roles. They:
 - Accept input
 - Process it
 - Return output
 - Stay modular
 
+Note: Specialists are recommendations in outputs and never auto-run; users explicitly invoke them. Always surface the best next specialist in the next-command block when appropriate.
+
 ### 4. Human Orchestration
 Users can:
 - Call commands directly: `/build feature`
 - Let Claude build in main thread
-- Invoke specialist commands for focused tasks: "commit these changes" → `github-whisperer`
+- Invoke specialist commands explicitly for focused tasks: "commit these changes" → `github-whisperer` (recommended via next-command)
 - Mix approaches: Build → Test → Commit
 
 ## Delegation Intelligence
 
 ### When Claude Chooses Specialist Commands
 
-**Task indicators** trigger specialists:
+**Task indicators** should trigger recommendations (via next-command); the user explicitly runs specialists:
 - "document X" → `tech-docs`
 - "commit this" → `github-whisperer`
 - "deploy to cloudflare" → `cloudflare-whisperer`

@@ -24,7 +24,7 @@ transforms verbose markdown into clean, emoji-rich output following halo style.
 ### ⚡ {{action}}
 {{/if}}
 
-<!-- use the next-commands component for THE best next command -->
+<!-- ALWAYS include next-command so the user gets the best next step to run explicitly -->
 <generate_next_command>
   <use>@next-command</use>
 </generate_next_command>

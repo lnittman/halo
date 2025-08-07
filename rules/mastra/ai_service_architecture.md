@@ -7,7 +7,7 @@ The AI service (`*-ai`) must be a standalone Node.js/TypeScript project, complet
 
 ## 2. Directory Structure
 All AI logic must be contained within the `src/mastra/` directory.
--   `agents/`: Contains a subdirectory for each distinct AI agent (e.g., `chat/`, `code/`). Each agent directory must include its own `index.ts` for definition, `instructions.xml`, and `memory.ts`. Note: this `agents/` is inside the Mastra AI service only and is separate from halo's `commands/*` specialist prompts.
+-   `agents/`: Contains a subdirectory for each distinct AI agent (e.g., `chat/`, `code/`). Each agent directory must include its own `index.ts` for definition, `instructions.xml`, and `memory.ts`.
 -   `tools/`: Contains definitions for tools that agents can use, organized by function.
 -   `workflows/`: Defines multi-step processes that combine agents and tools.
 -   `lib/`: Contains shared utilities, such as the RAG implementation for attachments.

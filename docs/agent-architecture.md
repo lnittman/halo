@@ -16,7 +16,7 @@ A powerful system combining commands, roles, and specialist commands for maximum
 - Run with their own prompt context
 - Use specific, restricted tools
 - Focus on one domain deeply
-- Triggered by PROACTIVE descriptions and task keywords
+- Recommended proactively in outputs, but explicitly run by the user
 
 ## Key Design Decisions
 
