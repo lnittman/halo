@@ -105,7 +105,7 @@ the AI service lives within the monorepo:
 - apps/ai/
   - src/
     - mastra/
-    - agents/
+    - agents/ (Mastra runtime agents)
       - chat/
         - index.ts
         - instructions.xml

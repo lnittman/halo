@@ -76,7 +76,7 @@ All agents now use consistent report formats with:
 
 ## 📁 New Role-Based Agents Created
 
-### agents/roles/
+### commands/role/
 1. **product-orchestrator.md** - Strategic project management with Linear integration
 2. **ai-architect.md** - AI system design with Mastra and Vercel AI SDK
 3. **design-systems-architect.md** - Component library architecture with shadcn/ui

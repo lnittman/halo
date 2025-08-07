@@ -1,9 +1,9 @@
-# 🦊 Halo Agent Summary
+# 🦊 Halo Specialist Command Summary
 
-## 📊 Agent Categories & Permissions
+## 📊 Specialist Categories & Permissions
 
 ### 🔍 Analyzers (READ-ONLY)
-These agents only read and analyze - they NEVER modify files.
+These specialists only read and analyze - they NEVER modify files.
 
 #### audit-codebase ✅
 - **Tools**: Grep, Glob, Read (no write tools)
@@ -11,11 +11,10 @@ These agents only read and analyze - they NEVER modify files.
 - **Output**: Structured audit report with issues, warnings, suggestions
 - **Usage**: "Audit this codebase" or automatically after code changes
 
-#### pattern-extractor ⚠️
-- **Tools**: Read, Grep, Glob, Task
+#### pattern-extractor ✅
+- **Tools**: Read, Grep, Glob (READ-ONLY)
 - **Purpose**: Extract patterns and best practices
-- **Note**: Has Task tool but should be READ-ONLY
-- **Action**: Consider removing Task tool
+- **Note**: Enforced read-only; no Task tool
 
 ### 🏗️ Builders (READ-WRITE)
 These agents create and modify files to build features.
@@ -117,37 +116,37 @@ These agents integrate with external services.
 ### For Motion & Animation
 ```bash
 # Basic usage
-"Add smooth scroll to my site" → motion-expert
-"Create page transitions" → motion-expert
-"Add micro-interactions to buttons" → motion-expert
+"Add smooth scroll to my site" → commands/builder/motion-expert
+"Create page transitions" → commands/builder/motion-expert
+"Add micro-interactions to buttons" → commands/builder/motion-expert
 
 # Advanced
-"Create a reveal animation like Apple's site" → motion-expert
-"Add magnetic hover effects" → motion-expert
+"Create a reveal animation like Apple's site" → commands/builder/motion-expert
+"Add magnetic hover effects" → commands/builder/motion-expert
 ```
 
 ### For 3D Effects
 ```bash
 # Basic usage
-"Add 3D hero section" → 3d-artist
-"Create particle effects" → 3d-artist
+"Add 3D hero section" → commands/builder/3d-artist
+"Create particle effects" → commands/builder/3d-artist
 
 # Advanced
-"Create ferrofluid effect like Vercel Ship" → 3d-artist
-"Add WebGL background with shader effects" → 3d-artist
-"Build interactive 3D product showcase" → 3d-artist
+"Create ferrofluid effect like Vercel Ship" → commands/builder/3d-artist
+"Add WebGL background with shader effects" → commands/builder/3d-artist
+"Build interactive 3D product showcase" → commands/builder/3d-artist
 ```
 
 ### For Video Creation
 ```bash
 # Basic usage
-"Create product demo video" → video-studio
-"Make UI component showcase video" → video-studio
+"Create product demo video" → commands/builder/video-studio
+"Make UI component showcase video" → commands/builder/video-studio
 
 # Advanced
-"Create animated explainer for my API" → video-studio
-"Build conference intro video with logo animation" → video-studio
-"Generate social media videos from my components" → video-studio
+"Create animated explainer for my API" → commands/builder/video-studio
+"Build conference intro video with logo animation" → commands/builder/video-studio
+"Generate social media videos from my components" → commands/builder/video-studio
 ```
 
 ## 📋 Output Templates Needed

@@ -33,23 +33,23 @@ prioritize by:
 </context_analysis>
 
 <command_selection>
-based on context, select THE command that:
-- addresses the most pressing need
-- provides maximum immediate value
-- follows naturally from current state
-- moves the project forward significantly
-- feels inevitable and obvious
-
-common progressions:
-- /prime → /build (implement core feature)
-- /create → /build (add first component)
-- /build → /test-coverage (ensure quality)
-- /build → /docs (document changes)
-- major feature → /audit-codebase (verify quality)
-- complexity added → /simplify-design (refine)
-- ui complete → /polish-interface (perfect)
-- all done → /vision (what's next?)
-</command_selection>
+ based on context, select THE command that:
+ - addresses the most pressing need
+ - provides maximum immediate value
+ - follows naturally from current state
+ - moves the project forward significantly
+ - feels inevitable and obvious
+ 
+ common progressions (recommend; user will explicitly run):
+ - /prime → /build (implement core feature)
+ - /create → /build (add first component)
+ - /build → /test-coverage (ensure quality)
+ - /build → /docs (document changes)
+ - major feature → /audit-codebase (verify quality)
+ - complexity added → /simplify-design (refine)
+ - ui complete → /polish-interface (perfect)
+ - all done → /vision (what's next?)
+ </command_selection>
 
 <prd_generation>
 create a focused PRD (400 words) that:
@@ -109,6 +109,8 @@ ensure the command:
 ✓ is immediately actionable
 ✓ provides clear value
 ✓ feels like the obvious next step
+✓ recommends a specialist command when appropriate (user executes it explicitly)
+✓ is included in every command output to guide the next chat turn
 </quality_checks>
 </next_command_algorithm>
 ```

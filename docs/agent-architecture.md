@@ -1,6 +1,6 @@
-# Claude Agent Architecture
+# Claude Command + Role Architecture
 
-A powerful system combining commands, roles, and agents for maximum flexibility and capability.
+A powerful system combining commands, roles, and specialist commands for maximum flexibility and capability.
 
 ## Two-Layer Architecture
 
@@ -11,12 +11,12 @@ A powerful system combining commands, roles, and agents for maximum flexibility 
 - Can be chained together
 - Examples: `/build`, `/create`, `/prime`
 
-### 2. Agents (`/agents/`)
-**Purpose**: Isolated single-purpose specialists
-- Have their own context window
+### 2. Specialist Commands (in `/commands/*`)
+**Purpose**: Isolated single-purpose specialists implemented as commands
+- Run with their own prompt context
 - Use specific, restricted tools
 - Focus on one domain deeply
-- Triggered by PROACTIVE descriptions
+- Recommended proactively in outputs, but explicitly run by the user
 
 ## Key Design Decisions
 
@@ -26,7 +26,7 @@ A powerful system combining commands, roles, and agents for maximum flexibility 
 - Leverage conversation context
 - Quick and responsive
 
-### Agents Provide Specialization
+### Specialists Provide Specialization
 - **tech-docs**: Aggregate documentation from multiple sources
 - **github-whisperer**: Git operations and repository management
 - **cloudflare-whisperer**: Edge deployment and services
@@ -82,11 +82,11 @@ Assistant: *uses cloudflare-whisperer agent*
 
 ## Benefits
 
-1. **Flexibility**: Use commands for workflow, agents for expertise
-2. **Isolation**: Agents don't pollute main context
-3. **Personality**: Each agent has distinct voice and approach
-4. **Integration**: Agents can use commands and MCP tools
-5. **Extensibility**: Easy to add new agents/roles
+1. **Flexibility**: Use commands for workflow, specialists for expertise
+2. **Isolation**: Specialists don't pollute main context
+3. **Personality**: Each specialist has distinct voice and approach
+4. **Integration**: Specialists can use commands and MCP tools
+5. **Extensibility**: Easy to add new specialists/roles
 
 ## Future Possibilities
 
