@@ -2,24 +2,24 @@
 
 The flow of data and execution must follow a clear, uni-directional pattern from the UI to the backend services, with a strict separation of concerns.
 
-## 1. Primary API Pattern: Server Actions
--   **Use Case**: Server Actions are the default and required method for all data mutations (e.g., create, update, delete operations) initiated from the client.
--   **Location**: Server Actions must be defined in the `apps/app/src/actions/` directory and organized into domain-specific files (e.g., `chat.ts`, `project.ts`).
--   **Logic**: Server Actions must be lightweight and delegate all business logic to the appropriate services in the `packages/api` package. They must not contain business logic themselves.
--   **Validation and Authorization**: All Server Actions must validate their inputs using a Zod schema and perform an authentication and authorization check before calling any service.
--   **Cache Invalidation**: After a successful mutation, Server Actions must use `revalidatePath` or `revalidateTag` to invalidate the Next.js cache.
+## 1. Primary API Pattern: Hono API on Cloudflare Workers
+-   **Use Case**: The Hono API (`apps/api`) is the primary backend service handling all API requests, deployed on Cloudflare Workers for edge performance.
+-   **Structure**: Routes are organized using Hono's router pattern with type-safe oRPC/tRPC procedures.
+-   **Authentication**: Uses Clerk for authentication with JWT verification at the edge.
+-   **Logic**: API routes must be lightweight and delegate business logic to the `packages/services` package.
+-   **Type Safety**: Shared types and procedures are defined in `packages/orpc` for end-to-end type safety.
 
-## 2. Secondary API Pattern: Route Handlers
--   **Use Case**: API Route Handlers (`app/api/**/route.ts`) must only be used for the following specific scenarios:
-    1.  GET requests for data fetching by clients.
-    2.  Serving as endpoints for third-party webhooks (e.g., Clerk).
-    3.  Internal service-to-service communication (e.g., from the AI service to the web app's RAG API).
-    4.  Health checks.
--   **Business Logic**: Route Handlers must not contain business logic directly. They must delegate all logic to services within the `packages/api` package.
+## 2. Secondary API Pattern: Next.js Server Actions
+-   **Use Case**: Server Actions in `apps/app/src/actions/` can be used for:
+    1.  Form submissions and simple mutations when edge deployment isn't required
+    2.  Real-time updates using `revalidatePath` or `revalidateTag`
+    3.  File uploads that need Next.js middleware processing
+-   **Business Logic**: Server Actions must delegate to `packages/services` for business logic.
 
-## 3. Service Layer (`packages/api`)
--   **Responsibility**: The `packages/api` package is the single source of truth for all business logic. It is the only package that should directly interact with the database (`@repo/database`) and the AI client (`@repo/ai`).
+## 3. Service Layer (`packages/services`)
+-   **Responsibility**: The `packages/services` package is the single source of truth for all business logic. It is the only package that should directly interact with the database (`packages/database`) and coordinate with AI services.
 -   **Structure**: Logic must be organized into domain-specific services (e.g., `chatService`, `projectService`).
 -   **Service Layer Boundaries**: The service layers have a strict hierarchy:
-    - `packages/api` IS ALLOWED to import from and use `packages/ai`.
-    - `packages/ai` MUST NEVER import from `packages/api` or `packages/database`. It must remain a pure, dependency-free client for the external AI service.
+    - `packages/services` IS ALLOWED to import from `packages/database`, `packages/ai`, and other utility packages.
+    - `packages/ai` MUST NEVER import from `packages/services` or `packages/database`. It must remain a pure utilities package.
+    - `apps/api` and `apps/app` both delegate to `packages/services` for business logic.
