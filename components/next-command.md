@@ -52,7 +52,7 @@ prioritize by:
  </command_selection>
 
 <prd_generation>
-create a focused PRD (400 words) that:
+create a comprehensive PRD (400-800 words) that:
 
 1. OBJECTIVE - crystal clear goal
    - what exactly will be built
