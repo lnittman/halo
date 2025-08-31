@@ -1,4 +1,4 @@
-# 🔨 builder:unreal:build - compilation and packaging
+# builder:unreal:build - compilation and packaging
 
 automated build pipeline for unreal engine projects with multi-platform support, optimization, and deployment preparation.
 
@@ -382,27 +382,27 @@ def verify_build(build_path):
     # check executable exists
     exe_path = os.path.join(build_path, "WindowsNoEditor/MyGame.exe")
     if os.path.exists(exe_path):
-        checks.append("✓ Executable found")
+        checks.append("Executable found")
         
         # check file size
         size_mb = os.path.getsize(exe_path) / (1024 * 1024)
-        checks.append(f"✓ Executable size: {size_mb:.2f} MB")
+        checks.append(f"Executable size: {size_mb:.2f} MB")
     else:
-        checks.append("✗ Executable missing")
+        checks.append("Executable missing")
     
     # check pak files
     pak_files = glob.glob(os.path.join(build_path, "**/*.pak"), recursive=True)
     if pak_files:
-        checks.append(f"✓ {len(pak_files)} PAK files found")
+        checks.append(f"{len(pak_files)} PAK files found")
         total_size = sum(os.path.getsize(f) for f in pak_files)
-        checks.append(f"✓ Total PAK size: {total_size / (1024**3):.2f} GB")
+        checks.append(f"Total PAK size: {total_size / (1024**3):.2f} GB")
     else:
-        checks.append("✗ No PAK files found")
+        checks.append("No PAK files found")
     
     # check for debug symbols
     pdb_files = glob.glob(os.path.join(build_path, "**/*.pdb"), recursive=True)
     if pdb_files:
-        checks.append("⚠ Debug symbols included (remove for shipping)")
+        checks.append("Debug symbols included (remove for shipping)")
     
     return checks
 ```
@@ -457,11 +457,11 @@ Build Stats:
 - Package size: 2.4 GB
 
 Optimizations Applied:
-✓ Unity build enabled
-✓ PCH usage optimized
-✓ Parallel compilation (16 cores)
-✓ Incremental cooking
-✓ Asset compression enabled
+ - Unity build enabled
+ - PCH usage optimized
+ - Parallel compilation (16 cores)
+ - Incremental cooking
+ - Asset compression enabled
 
 Test Results:
 - Unit tests: 142/142 passed

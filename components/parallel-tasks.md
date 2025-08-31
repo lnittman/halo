@@ -383,10 +383,10 @@ Task 4: "Run performance tests"
 
 ## Anti-Patterns
 
-- ❌ Over-decomposition (too many tiny tasks)
-- ❌ Tight coupling between agents
-- ❌ Unclear ownership boundaries
-- ❌ Missing coordination points
-- ❌ No progress visibility
-- ❌ Ignoring dependencies
-- ❌ Poor error handling in parallel tasks
+- Over-decomposition (too many tiny tasks)
+- Tight coupling between agents
+- Unclear ownership boundaries
+- Missing coordination points
+- No progress visibility
+- Ignoring dependencies
+- Poor error handling in parallel tasks

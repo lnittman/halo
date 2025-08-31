@@ -1,19 +1,19 @@
-# 🐙 halo
+# halo
 
 minimalist coding agent system with personality.
 
-## 🦉 what is halo?
+## what is halo?
 
-halo transforms verbose AI interactions into clean, emoji-rich experiences. think of it as a design system for coding agents - making them more human, more fun, more you.
+halo transforms verbose AI interactions into clean, readable experiences. think of it as a design system for coding agents — making them more human, more useful, more you.
 
-### 🦌 key features
+### key features
 
 - **lowercase vibes** - relaxed, approachable tone
-- **emoji-rich** - functional emojis for clarity
+- **clear cues** - focused, readable structure for clarity
 - **clean output** - no walls of text
 - **personality** - subtle, not overwhelming
 
-## 🦅 quick start
+## quick start
 
 ```bash
 # use any halo command
@@ -23,66 +23,66 @@ halo transforms verbose AI interactions into clean, emoji-rich experiences. thin
 /vision   # explore possibilities
 ```
 
-## 🐐 structure
+## structure
 
 ```
 .halo/
-├── 🦒 README.md           # you are here
-├── 🦒 halo-style-guide.md # the vibe
-├── 🦉 commands/           # all commands (includes specialist command prompts)
-├── 🧩 components/         # reusable parts
-├── 🐨 roles/             # expert personas (referenced by commands)
-└── 🐑 rules/             # coding standards
+├── README.md           # you are here
+├── halo-style-guide.md # the vibe
+├── commands/           # all commands (includes specialist command prompts)
+├── components/         # reusable parts
+├── roles/              # expert personas (referenced by commands)
+└── rules/              # coding standards
 ```
 
-## 🦆 the halo style
+## the halo style
 
 ### text rules
 - **lowercase everything** (except acronyms: AI, API, etc.)
-- **functional emoji** (not decoration)
+- **clear, minimal formatting** (no decorative symbols)
 - **concise & direct** (no fluff)
 
 ### example output
 ```markdown
-## 🐸 build complete
+## build complete
 
 **created**: 5 files
-**time**: 1.3s 🐆
+**time**: 1.3s
 **next**: [TEST] [DEPLOY]
 ```
 
 ### not this
 ```markdown
-## Build Successfully Completed! 🎉🎊🥳
+## Build Successfully Completed!
 
 I've successfully created 5 new files for you...
 [wall of text continues]
 ```
 
-## 🦫 commands
+## commands
 
-### 🦊 `/prime`
+### `/prime`
 understand your project context instantly
 
-### 🦫 `/build`
+### `/build`
 transform ideas into working code
 
-### 🐱 `/create`
+### `/create`
 scaffold complete project ecosystems
 
-### 🦋 `/vision`
+### `/vision`
 explore transformative possibilities
 
-### 🦜 `/design`
+### `/design`
 audit and document design systems
 
-### 🐛 `/docs`
+### `/docs`
 comprehensive documentation operations
 
-### 🦄 `/brand`
+### `/brand`
 create world-class brand identities
 
-## 🐯 agents
+## agents
 
 each agent has a personality that matches their purpose:
 
@@ -96,7 +96,7 @@ each agent has a personality that matches their purpose:
 - **dependency-doctor** - package management expert
 - **linear-whisperer** - project tracking sync specialist
 
-## 🐨 roles
+## roles
 
 expert personas and functional specialists:
 
@@ -112,14 +112,14 @@ expert personas and functional specialists:
 - product manager
 - ux researcher
 
-## 🦝 philosophy
+## philosophy
 
 inspired by:
 - **teenage engineering** - constraints breed creativity
 - **dieter rams** - less, but better
 - **80s-90s computing** - when interfaces had soul
 
-## 🐙 customization
+## customization
 
 ### modify commands
 edit any `.md` file in `/commands/` to adjust behavior
@@ -133,34 +133,34 @@ update `halo-style-guide.md` to match your vibe
 ### create roles
 add expert personas in `/roles/` directory
 
-## 🐆 tips
+## tips
 
 1. **be direct** - halo understands context
 2. **be concise** - commands work without prefixes
 3. **chain commands** - they share context
 4. **trust the vibe** - let halo's personality shine
 
-## 🦓 examples
+## examples
 
 ### understand a project
 ```bash
 /prime
-# 🐸 instant context about your codebase
+# instant context about your codebase
 ```
 
 ### build a feature
 ```bash
 /build add dark mode to settings
-# 🐸 implements with your patterns
+# implements with your patterns
 ```
 
 ### create an app
 ```bash
 /create weather-app
-# 🐸 full ecosystem scaffolded
+# full ecosystem scaffolded
 ```
 
-## 🐍 compatibility
+## compatibility
 
 halo works with:
 - claude code (primary)
@@ -172,14 +172,14 @@ halo works with:
 
 *remember: less noise, more signal. that's halo.*
 
-## 🦝 license
+## license
 
 MIT - do whatever makes you happy
 
-## 🐾 contributing
+## contributing
 
 keep it simple, keep it clean, keep it halo.
 
 ---
 
-made with 🐱 by developers who prefer lowercase
+made by developers who prefer lowercase

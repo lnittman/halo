@@ -208,11 +208,11 @@ Comprehensive verification and validation patterns for all Claude Code commands 
 ## User-Visible Verification Summary
 
 ```markdown
-### ✅ Verification Report
+### Verification Report
 
 **Pre-execution checks**: {{all_passed|some_failed}}
 {{#if failed_checks}}
-- ⚠️ {{failed_check_description}}
+- {{failed_check_description}}
 {{/if}}
 
 **Execution status**: {{completed|completed_with_warnings|failed}}
@@ -221,16 +221,16 @@ Comprehensive verification and validation patterns for all Claude Code commands 
 - Errors: {{error_count}}
 
 **Quality checks**:
-- 🧪 Tests: {{test_status}} ({{passed}}/{{total}})
-- 🔍 Linting: {{lint_status}}
-- 🔒 Security: {{security_status}}
-- ⚡ Performance: {{performance_status}}
+- Tests: {{test_status}} ({{passed}}/{{total}})
+- Linting: {{lint_status}}
+- Security: {{security_status}}
+- Performance: {{performance_status}}
 
 **Confidence level**: {{high|medium|low}}
 {{confidence_explanation}}
 
 {{#if issues_found}}
-### ⚠️ Issues Found
+### Issues Found
 {{#each issues}}
 - **{{issue.type}}**: {{issue.description}}
   - Impact: {{issue.impact}}
@@ -342,9 +342,9 @@ Comprehensive verification and validation patterns for all Claude Code commands 
 
 ## Anti-Patterns
 
-- ❌ Silent verification failures
-- ❌ Over-verification of simple tasks
-- ❌ Cryptic error messages
-- ❌ Blocking on non-critical issues
-- ❌ Ignoring verification results
-- ❌ Verification theater (checks that don't matter)
+- Silent verification failures
+- Over-verification of simple tasks
+- Cryptic error messages
+- Blocking on non-critical issues
+- Ignoring verification results
+- Verification theater (checks that don't matter)

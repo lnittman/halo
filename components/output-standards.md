@@ -1,14 +1,14 @@
-# 📋 output standards component
+# Output standards component
 
-transforms verbose markdown into clean, emoji-rich output following halo style.
+Transforms verbose markdown into clean, readable output following Halo style.
 
-## 🌀 core output structure
+## Core output structure
 
 ```xml
 <halo_output>
 <!-- command acknowledgment -->
 <prompt_echo>
-## 🎯 {{command}} {{arguments}}
+## {{command}} {{arguments}}
 </prompt_echo>
 
 <!-- clean status display -->
@@ -21,7 +21,7 @@ transforms verbose markdown into clean, emoji-rich output following halo style.
 <!-- action prompt -->
 <next_actions>
 {{#if immediate_action}}
-### ⚡ {{action}}
+### {{action}}
 {{/if}}
 
 <!-- ALWAYS include next-command so the user gets the best next step to run explicitly -->
@@ -32,18 +32,18 @@ transforms verbose markdown into clean, emoji-rich output following halo style.
 </halo_output>
 ```
 
-## 🎮 output templates
+## Output templates
 
 ### command execution
 ```markdown
-## ✅ {{command}} executed
+## {{command}} executed
 
 **files**: {{file_stats}}  
-**time**: {{duration}} ⚡  
+**time**: {{duration}}  
 **status**: {{indicator}}  
 
 {{#if details}}
-### 📊 details
+### Details
 - {{detail_line_1}}
 - {{detail_line_2}}
 {{/if}}
@@ -53,13 +53,13 @@ transforms verbose markdown into clean, emoji-rich output following halo style.
 
 ### analysis results
 ```markdown
-## 📊 analysis · {{target}}
+## Analysis · {{target}}
 
-**health**: {{pct}}% 🟢🟢🟢🟢🔴  
+**health**: {{pct}}%  
 **issues**: {{count}} found  
 **suggestions**: {{count}} available  
 
-### 🔍 top issues
+### Top issues
 {{#each issues}}
 - {{icon}} {{file}}:{{line}}
 {{/each}}
@@ -69,7 +69,7 @@ transforms verbose markdown into clean, emoji-rich output following halo style.
 
 ### error handling
 ```markdown
-## ❌ error · {{error_type}}
+## Error · {{error_type}}
 
 **what**: {{error_message}}  
 **where**: {{file}}:{{line}}  
@@ -80,7 +80,7 @@ transforms verbose markdown into clean, emoji-rich output following halo style.
 
 ### progress display
 ```markdown
-## 🔄 {{operation}} in progress
+## {{operation}} in progress
 
 {{progress_bar}} {{percentage}}%  
 {{status_indicator}} {{current_task}}  
@@ -88,37 +88,37 @@ transforms verbose markdown into clean, emoji-rich output following halo style.
 [SPACE] pause [ESC] cancel
 ```
 
-## 📊 status indicators
+## Status indicators
 
 ```javascript
 const indicators = {
   // progress states
-  pending:     '⏸️',
-  starting:    '▶️',
-  running:     '⏳',
-  finishing:   '⏱️',
-  complete:    '✅',
-  
+  pending:     'pending',
+  starting:    'starting',
+  running:     'running',
+  finishing:   'finishing',
+  complete:    'complete',
+
   // health states
-  excellent:   '🟢🟢🟢🟢🟢',
-  good:        '🟢🟢🟢🔶🔴',
-  fair:        '🟢🟢🔶🔴🔴',
-  poor:        '🟢🔶🔴🔴🔴',
-  critical:    '🔴🔴🔴🔴🔴',
+  excellent:   '5/5',
+  good:        '4/5',
+  fair:        '3/5',
+  poor:        '2/5',
+  critical:    '1/5',
 }
 ```
 
-## 🎯 command-specific formats
+## Command-specific formats
 
 ### prime (context initialization)
 ```markdown
-## 🎯 project context
+## Project context
 
 **type**: {{project_type}}  
 **stack**: {{tech_stack}}  
 **health**: {{health_bar}}  
 
-### 📡 recent activity
+### Recent activity
 {{#each recent_items}}
 - {{item}}
 {{/each}}
@@ -128,14 +128,14 @@ const indicators = {
 
 ### build (implementation)
 ```markdown
-## ✅ build success
+## Build success
 
 **created**: {{new}} files  
 **updated**: {{mod}} files  
-**time**: {{time}}s ⚡  
+**time**: {{time}}s  
 
 {{#if start_command}}
-### 🚀 start
+### Start
 ```bash
 {{start_command}}
 ```
@@ -146,29 +146,29 @@ const indicators = {
 
 ### create (project generation)
 ```markdown
-## 🌐 project scaffolded
+## Project scaffolded
 
 **name**: {{project_name}}  
 **type**: {{project_type}}  
 **dependencies**: {{dep_count}}  
 **size**: {{size_mb}}MB  
 
-### 📁 structure
+### Structure
 {{#each structure}}
 {{indent}}{{icon}} {{name}}
 {{/each}}
 
-### 🚀 quick start
+### Quick start
 ```bash
 cd {{project_path}} && {{start_cmd}}
 ```
 ```
 
-## 🖥️ interaction patterns
+## Interaction patterns
 
 ### multi-page results
 ```markdown
-## 📄 {{title}} [{{page}}/{{total}}]
+## {{title}} [{{page}}/{{total}}]
 
 {{#each items}}
 - {{icon}} {{item}}
@@ -179,7 +179,7 @@ cd {{project_path}} && {{start_cmd}}
 
 ### choice prompts
 ```markdown
-## 🎮 select option
+## Select option
 
 {{#each options}}
 **{{key}}**: {{label}} {{icon}}
@@ -190,12 +190,12 @@ cd {{project_path}} && {{start_cmd}}
 
 ### confirmation dialogs
 ```markdown
-## ❓ {{question}}
+## {{question}}
 
 **confirm**: Y/n
 ```
 
-## 🎨 formatting rules
+## Formatting rules
 
 ### text conventions
 - all lowercase (except acronyms/proper nouns)
@@ -209,7 +209,7 @@ cd {{project_path}} && {{start_cmd}}
 - single line between major sections
 - pack information efficiently
 
-## 🚀 implementation guide
+## Implementation guide
 
 ### transforming verbose output
 ```javascript
@@ -218,7 +218,7 @@ cd {{project_path}} && {{start_cmd}}
 Successfully analyzed 42 files...
 
 // NEW (halo)
-## ✅ scan complete
+## Scan complete
 **result**: 42 files analyzed
 ```
 
@@ -234,22 +234,22 @@ Successfully analyzed 42 files...
 ### showing progress
 ```javascript
 // simple
-⏳ analyzing...
+Analyzing...
 
 // detailed
 [75%] processing · 3.2s remaining
 
 // multi-step
-✅ scanning files
-✅ analyzing code
-⏳ generating report
-⏸️ formatting output
+scanning files
+analyzing code
+generating report
+formatting output
 ```
 
-## 📋 output checklist
+## Output checklist
 
 when generating output:
-- [ ] use functional emoji
+- [ ] avoid emoji
 - [ ] show clear status
 - [ ] include progress indicators
 - [ ] suggest next actions
@@ -257,4 +257,4 @@ when generating output:
 - [ ] use clean markdown formatting
 
 ---
-✨ output standards ready!
+Output standards ready!

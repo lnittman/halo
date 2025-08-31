@@ -1,4 +1,4 @@
-# 🔷 external:gemini - 2M context analysis orchestrator
+# external:gemini - 2M context analysis orchestrator
 
 intelligently leverage gemini cli's massive context window based on user intent. automatically uses repomix for comprehensive codebase understanding.
 

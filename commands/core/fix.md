@@ -1,6 +1,6 @@
-# 🔧 bug fix execution command
+# bug fix execution command
 
-diagnose and fix bugs from error logs, stack traces, and crash reports with precision and expertise.
+Diagnoses and fixes bugs using error logs, stack traces, and crash reports.
 
 <bug_fix_directive>
 you are a master debugger who transforms raw error messages into working code. you excel at parsing complex error outputs, identifying root causes, and implementing precise fixes. your superpower is understanding the story behind the error and fixing what's actually wrong, not just the symptoms.
@@ -100,9 +100,9 @@ interpreted ▸ {{error_interpretation}}
 severity ▸ {{severity_level}}
 type ▸ {{error_type}}
 
-{{#if stacktrace}}📚 stack trace available{{/if}}
-{{#if logfile}}📄 log file detected{{/if}}
-{{#if multiple}}🔗 multiple errors linked{{/if}}
+{{#if stacktrace}}stack trace available{{/if}}
+{{#if logfile}}log file detected{{/if}}
+{{#if multiple}}multiple errors linked{{/if}}
 
 *click* diagnosing root cause...
 </transformation_feedback>
@@ -275,7 +275,7 @@ ModuleNotFoundError: Cannot resolve 'module'
 </pre_fix_verification>
 
 <user_confirmation>
-## 🐛 fix verification
+## Fix verification
 
 **error**: {{error_summary}}  
 **fix**: {{proposed_fix}}  
@@ -283,14 +283,14 @@ ModuleNotFoundError: Cannot resolve 'module'
 **files**: {{files_to_change}}
 
 {{#if breaking_changes}}
-### ⚠️ breaking changes
+### Breaking changes
 {{#each breaking_changes}}
 - {{change}}
 {{/each}}
 {{/if}}
 
 {{#if needs_manual_testing}}
-### 🧪 requires manual testing
+### Requires manual testing
 - {{test_scenario}}
 {{/if}}
 
@@ -332,48 +332,48 @@ ModuleNotFoundError: Cannot resolve 'module'
 </fix_execution>
 
 <output_format>
-## ✅ bug fixed
+## Bug fixed
 
 **error**: {{error_type}}  
 **location**: {{file}}:{{line}}  
 **fix**: {{solution_applied}}  
-**time**: {{time}}s 🔧  
+**time**: {{time}}s  
 
-### 🐛 issue resolved
+### Issue resolved
 {{error_summary}}
 
-### 🔧 fixes applied
+### Fixes applied
 {{#each fixes}}
 - {{#if file}}**{{file}}**{{/if}}: {{description}}
 {{/each}}
 
-### 📝 files modified
+### Files modified
 {{#each modified_files}}
 - {{path}}
 {{/each}}
 
 {{#if test_command}}
-### 🧪 verification
+### Verification
 ```bash
 {{test_command}}
 ```
 {{/if}}
 
-### 📋 test checklist
+### Test checklist
 {{#each test_items}}
 - [ ] {{item}}
 {{/each}}
 
-### 🎯 next command
+### Next command
 
 <!-- analyze context and generate perfect next command with PRD -->
 <use>@next-command</use>
 ---
-🐛 squash! the bug has been eliminated.
+Bug squashed. The issue has been eliminated.
 </output_format>
 
 <error_handling>
-## ❌ fix failed
+## Fix failed
 
 **reason**: {{failure_reason}}  
 **original**: {{original_error}}  

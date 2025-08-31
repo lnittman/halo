@@ -127,7 +127,7 @@ Provides structured, multi-phase thinking patterns for all Claude Code commands 
 
 <!-- User-Visible Summary -->
 <thinking_summary>
-## 🧠 My Thinking Process
+## My Thinking Process
 
 **Understanding**: {{one_line_interpretation}}
 
@@ -257,7 +257,7 @@ Before accepting any approach as "good":
 
 ### Reality Check Output Format
 ```markdown
-### 🚨 Reality Check
+### Reality Check
 **What could fail**: [Honest assessment of failure modes]
 **Technical debt risks**: [Specific technical concerns]
 **User adoption barriers**: [Real obstacles users might face]
@@ -267,15 +267,15 @@ Before accepting any approach as "good":
 
 ## Anti-Patterns to Avoid
 
-- ❌ Showing every micro-decision
-- ❌ Using thinking as filler content
-- ❌ Repeating obvious information
-- ❌ Making thinking feel robotic
-- ❌ Hiding important decisions
-- ❌ Being overly agreeable or optimistic
-- ❌ Ignoring obvious problems
-- ❌ Assuming everything will work perfectly
-- ❌ Using superlatives like "amazing", "revolutionary", "game-changing"
+- Showing every micro-decision
+- Using thinking as filler content
+- Repeating obvious information
+- Making thinking feel robotic
+- Hiding important decisions
+- Being overly agreeable or optimistic
+- Ignoring obvious problems
+- Assuming everything will work perfectly
+- Using superlatives like "amazing", "revolutionary", "game-changing"
 
 ## Best Practices
 

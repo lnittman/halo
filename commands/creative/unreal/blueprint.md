@@ -1,4 +1,4 @@
-# 🎯 builder:unreal:blueprint - visual scripting
+# builder:unreal:blueprint - visual scripting
 
 comprehensive blueprint development for gameplay, ui, and automation with visual scripting best practices.
 
@@ -372,16 +372,16 @@ Functions:
 - OnStateChanged (Event)
 
 Optimizations Applied:
-✓ Tick disabled
-✓ Timer-based updates
-✓ Cached property bindings
-✓ Interface-based communication
-✓ Lazy component activation
+ - Tick disabled
+ - Timer-based updates
+ - Cached property bindings
+ - Interface-based communication
+ - Lazy component activation
 
 Replication:
-✓ Replicated properties configured
-✓ RPCs implemented
-✓ Network optimization applied
+ - Replicated properties configured
+ - RPCs implemented
+ - Network optimization applied
 ```
 
 ## <components>

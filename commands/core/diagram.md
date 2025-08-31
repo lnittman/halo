@@ -224,7 +224,7 @@ $ARGUMENTS
   </critical_evaluation>
   
   <thinking_summary>
-  ## 🧠 My Thinking Process
+  ## My Thinking Process
   
   **Understanding**: Creating diagrams that illuminate system understanding
   
@@ -481,42 +481,42 @@ Show how architecture evolved:
 </diagram_principles>
 
 <output_format>
-## 📊 Diagram Generation: [Type] for [Project]
+## Diagram Generation: [Type] for [Project]
 
-### 🎯 Visualization Intent
+### Visualization Intent
 **Goal**: [What the diagram shows]
 **Type**: [Diagram type]
 **Audience**: [Who this is for]
 
-### 📐 Generated Diagram
+### Generated Diagram
 
 [Generated diagram visualization]
 
-### 🐠 saved locations
+### Saved locations
 - primary: `[projectName]-docs/diagrams/[category]/[name].md`
 - export: `[projectName]-docs/diagrams/exports/[name].[format]`
 
-### 🔍 Key Insights
+### Key Insights
 1. **[Insight]**: [What the diagram reveals]
 2. **[Pattern]**: [Architectural pattern shown]
 3. **[Relationship]**: [Important connections]
 
-### 🎨 Styling Notes
+### Styling Notes
 - Theme: [Minimal/Branded/Technical]
 - Color Scheme: [Based on project brand]
 - Layout: [Hierarchical/Flow/Radial]
 
-### 🔗 Related Diagrams
+### Related Diagrams
 Suggested follow-ups based on this diagram:
 1. `[Related diagram type]` - [Why it would help]
 2. `[Another type]` - [Additional insight]
 
-### 💡 Usage Tips
+### Usage Tips
 **View in documentation**: open [projectName]-docs/diagrams/[name].md
 **Export as image**: npm run export-diagrams
 **Update with code changes**: /user:diagram update [name]
 
-### ⚠️ Caveats & Limitations
+### Caveats & Limitations
 - **Assumptions made**: 
   - Mermaid.js is available for rendering
   - System architecture follows common patterns
@@ -541,12 +541,12 @@ Suggested follow-ups based on this diagram:
 *Diagram created. What aspect should we visualize next?*
 
 <context_output>
-## 🐘 diagram complete
+## Diagram complete
 
-**type**: {{diagram_type}} 🦅  
+**type**: {{diagram_type}}  
 **analyzed**: {{file_count}} files  
 **saved**: {{save_path}}  
-**insights**: {{insight_count}} found 🦉  
+**insights**: {{insight_count}} found  
 
 **next**: [BUILD] [DOCS] [PRESENT]
 - phase: visualization_complete
@@ -620,29 +620,29 @@ Suggested follow-ups based on this diagram:
 </interoperability_matrix>
 
 <output_format>
-## 🎨 diagrams generated
+## Diagrams generated
 
 **created**: {{diagram_count}} diagrams  
 **types**: {{diagram_types}}  
-**time**: {{time}}s 🎨  
+**time**: {{time}}s  
 
-### 📊 diagram outputs
+### Diagram outputs
 {{#each diagrams}}
 - **{{type}}**: `{{path}}`
   {{description}}
 {{/each}}
 
-### 🎯 usage notes
+### Usage notes
 {{#each usage_notes}}
 - {{note}}
 {{/each}}
 
-### 🎯 next command
+### Next command
 
 <!-- analyze context and generate perfect next command with PRD -->
 <use>@next-command</use>
 ---
-📐 visualized. your architecture is now clear as a diagram.
+Visualized. Your architecture is now clear as a diagram.
 </output_format>
 
 $ARGUMENTS

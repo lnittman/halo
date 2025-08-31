@@ -1,4 +1,4 @@
-# 🎬 builder:unreal:render - virtual production & cinematics
+# builder:unreal:render - virtual production & cinematics
 
 real-time rendering, virtual production workflows, and cinematic output with unreal engine's advanced rendering features.
 
@@ -416,11 +416,11 @@ Frame Rate: 30fps
 Duration: 2m 30s (4500 frames)
 
 Render Passes:
-✓ Beauty Pass
-✓ Depth Pass
-✓ Motion Vectors
-✓ Object IDs
-✓ Cryptomatte
+ - Beauty Pass
+ - Depth Pass
+ - Motion Vectors
+ - Object IDs
+ - Cryptomatte
 
 Performance:
 - Average FPS: 28.7
@@ -429,10 +429,10 @@ Performance:
 - Render Time: 6h 23m
 
 Virtual Production Setup:
-✓ LED Wall Configuration
-✓ Camera Tracking Active
-✓ Inner Frustum Calibrated
-✓ Color Pipeline Matched
+ - LED Wall Configuration
+ - Camera Tracking Active
+ - Inner Frustum Calibrated
+ - Color Pipeline Matched
 
 Output Location:
 /Renders/VP_Project_001/
@@ -447,7 +447,7 @@ Output Location:
 ### production workflows
 - `/builder:unreal:deploy` - distribute renders
 - `/video-studio` - post-production
-- `/motion-expert` - animation refinement
+- `/motion` - animation refinement
 
 ---
 

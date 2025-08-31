@@ -1,4 +1,4 @@
-# 🚀 builder:unreal:prime - project initialization
+# builder:unreal:prime - project initialization
 
 comprehensive unreal engine project setup with full sdk integration, automation configuration, and development environment preparation.
 
@@ -332,9 +332,9 @@ def verify_project_integrity():
     for folder in required_folders:
         path = os.path.join(unreal.Paths.project_dir(), folder)
         if os.path.exists(path):
-            checks.append(f"✓ {folder} directory exists")
+            checks.append(f"{folder} directory exists")
         else:
-            checks.append(f"✗ {folder} directory missing")
+            checks.append(f"{folder} directory missing")
             os.makedirs(path, exist_ok=True)
     
     # check plugins
@@ -346,17 +346,17 @@ def verify_project_integrity():
     enabled_plugins = unreal.PluginManager.get_enabled_plugins()
     for plugin in required_plugins:
         if plugin in enabled_plugins:
-            checks.append(f"✓ {plugin} enabled")
+            checks.append(f"{plugin} enabled")
         else:
-            checks.append(f"✗ {plugin} disabled")
+            checks.append(f"{plugin} disabled")
             unreal.PluginManager.enable_plugin(plugin)
     
     # check engine version
     engine_version = unreal.SystemLibrary.get_engine_version()
     if engine_version >= "5.4":
-        checks.append(f"✓ Engine version {engine_version}")
+        checks.append(f"Engine version {engine_version}")
     else:
-        checks.append(f"⚠ Engine version {engine_version} (consider upgrading)")
+        checks.append(f"Engine version {engine_version} (consider upgrading)")
     
     return checks
 ```
@@ -372,11 +372,11 @@ Engine: 5.6.0
 Platform: Windows
 Template: ThirdPerson
 
-✓ Project structure created
-✓ Python automation enabled
-✓ Build scripts configured
-✓ Version control initialized
-✓ CI/CD pipeline ready
+ - Project structure created
+ - Python automation enabled
+ - Build scripts configured
+ - Version control initialized
+ - CI/CD pipeline ready
 
 Automation Scripts:
 - init_unreal.py (loaded on startup)

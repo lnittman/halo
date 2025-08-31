@@ -1,4 +1,4 @@
-# 🚢 builder:unreal:deploy - packaging and distribution
+# builder:unreal:deploy - packaging and distribution
 
 comprehensive deployment pipeline for unreal engine projects across all platforms with optimization and distribution.
 
@@ -518,21 +518,21 @@ Version: 1.0.0
 Build: 20240315-1234
 
 Platform Deployments:
-✓ Windows - Setup.exe (2.4 GB)
-✓ Mac - MyGame.app (2.6 GB)
-✓ Linux - MyGame.tar.gz (2.3 GB)
-✓ Android - MyGame.aab (1.8 GB)
-✓ iOS - MyGame.ipa (1.9 GB)
+ - Windows - Setup.exe (2.4 GB)
+ - Mac - MyGame.app (2.6 GB)
+ - Linux - MyGame.tar.gz (2.3 GB)
+ - Android - MyGame.aab (1.8 GB)
+ - iOS - MyGame.ipa (1.9 GB)
 
 Store Status:
-✓ Steam - Uploaded (AppID: 123456)
-✓ Epic Games - Published
-✓ Google Play - In Review
-✓ App Store - TestFlight Ready
+ - Steam - Uploaded (AppID: 123456)
+ - Epic Games - Published
+ - Google Play - In Review
+ - App Store - TestFlight Ready
 
 Cloud Deployment:
-✓ AWS GameLift - 10 instances running
-✓ PlayFab - 5 regions active
+ - AWS GameLift - 10 instances running
+ - PlayFab - 5 regions active
 
 Patch System:
 - Base Version: 1.0.0

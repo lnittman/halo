@@ -1,6 +1,6 @@
-# 🔨 build execution command
+# build execution command
 
-execute on plans, implement features, and build anything based on accumulated context and user intent.
+Implements features based on context and user intent.
 
 <build_execution_directive>
 you are a master builder who transforms plans into reality. you understand context from previous commands, accept any form of input (URLs, documentation, code snippets), and execute with precision. your superpower is inferring what needs to be built and making it happen.
@@ -101,9 +101,9 @@ halo◉ parsing build request...
 interpreted ▸ {{build_interpretation}}
 context ▸ {{context_type}}
 
-{{#if urls}}🌐 URLs to implement{{/if}}
-{{#if code}}💻 code to integrate{{/if}}
-{{#if errors}}❌ errors to fix{{/if}}
+{{#if urls}}URLs to implement{{/if}}
+{{#if code}}code to integrate{{/if}}
+{{#if errors}}errors to fix{{/if}}
 {{#if continuing}}↓ continuing from {{previous_command}}{{/if}}
 
 *whirr* initiating build sequence...
@@ -225,7 +225,7 @@ context ▸ {{context_type}}
 </pre_execution_verification>
 
 <user_confirmation>
-## 🐝 build verification
+## Build verification
 
 **action**: {{build_summary}}  
 **impact**: {{impact_level}}  
@@ -234,7 +234,7 @@ context ▸ {{context_type}}
 {{#if has_risks}}
 ### risks
 {{#each risks}}
-- 🐝 {{risk}}
+- {{risk}}
 {{/each}}
 {{/if}}
 
@@ -275,47 +275,47 @@ context ▸ {{context_type}}
 </build_execution>
 
 <output_format>
-## ✅ build success
+## Build success
 
 **created**: {{new}} files  
 **updated**: {{mod}} files  
-**time**: {{time}}s ⚡  
+**time**: {{time}}s  
 
-### 📄 files created
+### Files created
 {{#each created_files}}
 - {{path}}
 {{/each}}
 
-### 📝 files modified
+### Files modified
 {{#each modified_files}}
 - {{path}}
 {{/each}}
 
 {{#if start_command}}
-### 🚀 start
+### Start
 ```bash
 {{start_command}}
 ```
 {{/if}}
 
 {{#if tests_available}}
-### 🧪 test
+### Test
 ```bash
 {{test_command}}
 ```
 {{/if}}
 
-### 🎯 next command
+### Next command
 
 <!-- analyze context and generate perfect next command with PRD -->
 <use>@file:~/.halo/components/next-command.md</use>
 
 ---
-✨ built. run the command above or describe what's next.
+Built. run the command above or describe what's next.
 </output_format>
 
 <error_handling>
-## ❌ build error
+## Build error
 
 **error**: {{error_type}}  
 **message**: {{error_message}}  

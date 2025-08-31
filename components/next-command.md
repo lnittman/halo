@@ -100,17 +100,17 @@ create a comprehensive PRD (400-800 words) that:
 
 <quality_checks>
 ensure the command:
-✓ addresses most pressing current need
-✓ includes specific, contextual arguments
-✓ has comprehensive PRD (not generic)
-✓ removes all implementation ambiguity
-✓ follows detected patterns exactly
-✓ respects existing architecture
-✓ is immediately actionable
-✓ provides clear value
-✓ feels like the obvious next step
-✓ recommends a specialist command when appropriate (user executes it explicitly)
-✓ is included in every command output to guide the next chat turn
+ - addresses the most pressing current need
+ - includes specific, contextual arguments
+ - has a comprehensive PRD (not generic)
+ - removes all implementation ambiguity
+ - follows detected patterns exactly
+ - respects existing architecture
+ - is immediately actionable
+ - provides clear value
+ - feels like the obvious next step
+ - recommends a specialist command when appropriate (user executes it explicitly)
+ - is included in every command output to guide the next chat turn
 </quality_checks>
 </next_command_algorithm>
 ```
@@ -118,7 +118,7 @@ ensure the command:
 ## output format
 
 ```markdown
-### 🎯 next command
+### Next command
 
 ```bash
 /[command_name] [specific contextual arguments based on current state]
@@ -127,21 +127,21 @@ ensure the command:
 **why this next**: [compelling reason why this is THE best next step - 2-3 sentences explaining the value and logic]
 
 <details>
-<summary>📋 detailed PRD specification (click to expand)</summary>
+<summary>Detailed PRD specification (click to expand)</summary>
 
 # [Feature/Task Name] Specification
 
-## 🎯 Objective
+## Objective
 
 [Clear, specific goal statement - what will exist after this command completes]
 
-## 📊 Context
+## Context
 
 **Current State**: [What exists now in the project]
 **Gap**: [What's missing that this will address]  
 **Impact**: [Why this matters and who benefits]
 
-## 📐 Requirements
+## Requirements
 
 ### Functional Requirements
 1. **[Feature Name]**
@@ -170,7 +170,7 @@ ensure the command:
 - **Accessibility**: [WCAG standards]
 - **Security**: [Specific considerations]
 
-## 🏗️ Implementation Approach
+## Implementation Approach
 
 ### Phase 1: Setup (30 min)
 1. [Specific first step with command/code]
@@ -191,7 +191,7 @@ ensure the command:
 1. [What to document]
 2. [Where to document]
 
-## 📊 Success Criteria
+## Success Criteria
 
 ### User Success
 - [ ] [User can accomplish X]
@@ -207,7 +207,7 @@ ensure the command:
 - [ ] [Metric improved]
 - [ ] [Goal achieved]
 
-## 💡 Example Usage
+## Example Usage
 
 ```typescript
 // concrete example of the feature in use
@@ -218,7 +218,7 @@ const result = await Feature.use({
 })
 ```
 
-## 🚀 Future Considerations
+## Future Considerations
 
 After this completes, consider:
 - [Natural next enhancement]

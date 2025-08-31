@@ -32,7 +32,7 @@ Provides consistent planning patterns across all Claude Code commands that invol
   </context_gathering>
   
   <discovery_summary>
-    ## 📊 Discovery Findings
+    ## Discovery Findings
     
     **Current State**: {{state_summary}}
     
@@ -131,7 +131,7 @@ Provides consistent planning patterns across all Claude Code commands that invol
 
 <!-- Phase 4: Planning Output -->
 <planning_output>
-  ## 📋 Implementation Plan
+  ## Implementation Plan
   
   ### Selected Approach
   **{{approach_name}}**
@@ -307,8 +307,8 @@ const planningDepth = {
 
 ## Anti-Patterns
 
-- ❌ Analysis paralysis - planning forever
-- ❌ Over-detailed initial plans
-- ❌ Ignoring constraints until late
-- ❌ Planning without research
-- ❌ Rigid plans that can't adapt
+- Analysis paralysis - planning forever
+- Over-detailed initial plans
+- Ignoring constraints until late
+- Planning without research
+- Rigid plans that can't adapt

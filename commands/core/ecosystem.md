@@ -223,15 +223,15 @@ When `wisdom` is specified:
 </operation_handlers>
 
 <output_format>
-## 🌍 Ecosystem Analysis: $OPERATION
+## Ecosystem Analysis: $OPERATION
 
-### 📊 Overview
+### Overview
 - **Projects Analyzed**: [count]
 - **Operation**: [audit|standards|evolve|wisdom]
 - **Scope**: [what was analyzed]
 - **Timestamp**: [ISO timestamp]
 
-### 🔍 Key Findings
+### Key Findings
 
 #### Compliance Status
 | Standard | Compliance | Projects | Issues |
@@ -247,7 +247,7 @@ $PATTERN_FINDINGS
 #### Recommendations
 $RECOMMENDATIONS
 
-### 📈 Metrics
+### Metrics
 
 #### Dependency Health
 - Outdated packages: [count]
@@ -259,7 +259,7 @@ $RECOMMENDATIONS
 - Test coverage: [avg %]
 - Documentation coverage: [%]
 
-### 🎯 Action Items
+### Action Items
 
 **Immediate** (Address within 24h):
 - [ ] [Critical issue 1]
@@ -273,16 +273,16 @@ $RECOMMENDATIONS
 - [ ] [Strategic enhancement 1]
 - [ ] [Strategic enhancement 2]
 
-### 🔄 Evolution Opportunities
+### Evolution Opportunities
 
 $EVOLUTION_SUGGESTIONS
 
-### 💡 Extracted Wisdom
+### Extracted Wisdom
 
 $WISDOM_INSIGHTS
 
 <context_output>
-## 🔗 Command Context
+## Command Context
 **Command**: /user:ecosystem $OPERATION
 **Timestamp**: [ISO timestamp]
 **Projects**: [count analyzed]
@@ -346,28 +346,28 @@ $WISDOM_INSIGHTS
 </error_handling>
 
 <output_format>
-## 🌍 ecosystem analysis complete
+## Ecosystem analysis complete
 
 **analyzed**: {{project_count}} projects  
 **standards**: {{compliance_percent}}% aligned  
-**actions**: {{action_count}} items 🌍  
+**actions**: {{action_count}} items  
 
-### 📊 key findings
+### Key findings
 {{#each findings}}
 - {{category}}: {{finding}}
 {{/each}}
 
-### 🔄 recommended actions
+### Recommended actions
 {{#each actions}}
 - [ ] {{priority}}: {{action}}
 {{/each}}
 
-### 🎯 next command
+### Next command
 
 <!-- analyze context and generate perfect next command with PRD -->
 <use>@next-command</use>
 ---
-🌍 ecosystem mastered. your projects are now optimized.
+Ecosystem mastered. your projects are now optimized.
 </output_format>
 </ecosystem_directive>
 

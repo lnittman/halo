@@ -1,4 +1,4 @@
-# 🔮 external:codex - deep reasoning orchestrator
+# external:codex - deep reasoning orchestrator
 
 intelligently leverage codex cli's GPT-5 for tasks requiring strategic thinking, complex problem solving, and architectural reasoning.
 

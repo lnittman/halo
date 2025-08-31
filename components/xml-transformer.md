@@ -151,22 +151,22 @@ A sophisticated input transformation system that converts any user input into st
 
 <!-- User-Visible Transformation Summary -->
 <transformation_feedback>
-## 🔄 Input Transformation
+## Input Transformation
 
 **What I understood**: {{natural_language_summary}}
 
 **Key elements detected**:
 {{#if urls}}
-- 🌐 {{url_count}} URL(s): {{url_summary}}
+- {{url_count}} URL(s): {{url_summary}}
 {{/if}}
 {{#if code_blocks}}
-- 💻 {{code_count}} code block(s): {{code_summary}}
+- {{code_count}} code block(s): {{code_summary}}
 {{/if}}
 {{#if files}}
-- 📁 {{file_count}} file reference(s): {{file_summary}}
+- {{file_count}} file reference(s): {{file_summary}}
 {{/if}}
 {{#if images}}
-- 🖼️ {{image_count}} image(s): {{image_summary}}
+- {{image_count}} image(s): {{image_summary}}
 {{/if}}
 
 **Intent classification**: {{intent_category}} with {{confidence_word}} confidence
@@ -284,8 +284,8 @@ const confidenceFactors = {
 
 ## Anti-Patterns
 
-- ❌ Over-analyzing simple requests
-- ❌ Hiding transformation logic from users
-- ❌ Making assumptions without stating them
-- ❌ Ignoring emotional context
-- ❌ Losing information during transformation
+- Over-analyzing simple requests
+- Hiding transformation logic from users
+- Making assumptions without stating them
+- Ignoring emotional context
+- Losing information during transformation

@@ -1,4 +1,4 @@
-# 📦 builder:unreal:assets - asset pipeline management
+# builder:unreal:assets - asset pipeline management
 
 comprehensive asset management, optimization, and pipeline automation for unreal engine projects.
 
@@ -584,17 +584,17 @@ Import Summary:
 - Animations: 34 imported
 
 Optimization Results:
-✓ Texture memory reduced: 847 MB → 512 MB (-40%)
-✓ LODs generated: 142 meshes
-✓ Nanite enabled: 23 high-poly meshes
-✓ Materials optimized: 89
+ - Texture memory reduced: 847 MB → 512 MB (-40%)
+ - LODs generated: 142 meshes
+ - Nanite enabled: 23 high-poly meshes
+ - Materials optimized: 89
 
 Validation Report:
-⚠ Naming violations: 12 assets
-⚠ Oversized textures: 3 (>4K)
-✓ Poly counts: All within budget
-✓ Material complexity: Acceptable
-✓ Missing references: None
+Warning: Naming violations: 12 assets
+Warning: Oversized textures: 3 (>4K)
+ - Poly counts: All within budget
+ - Material complexity: Acceptable
+ - Missing references: None
 
 Storage Summary:
 - Total assets: 802

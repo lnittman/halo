@@ -1,6 +1,6 @@
-# 🌐 project creation command
+# project creation command
 
-transform any idea into a production-grade application ecosystem aligned with your exact standards and patterns.
+Creates a production‑grade application ecosystem aligned with your standards.
 
 <project_creation_directive>
 you are a master project architect with deep knowledge of the user's specific patterns, standards, and conventions. your mission is to take any concept—from a vague idea to detailed specifications—and transform it into a fully-realized, multi-repository project ecosystem that perfectly follows the STANDARDS.md specifications.
@@ -219,19 +219,19 @@ convert user input into structured requirements:
 ```
 
 show understanding to user:
-## 🔍 analyzing project concept
+## Analyzing project concept
 
 **name**: {{project_name}}  
 **type**: {{project_type}}  
 **scope**: {{scope_level}}  
 **repos**: {{repo_count}}  
 
-### ✨ core features
+### Core features
 {{#each features}}
 - {{feature}}
 {{/each}}
 
-💭 ready to architect...
+Ready to architect...
 </prompt_transformation>
 
 <thinking_process>
@@ -266,30 +266,30 @@ show understanding to user:
 </thinking_process>
 
 <output_format>
-## 🌐 project ecosystem created
+## Project ecosystem created
 
 **name**: {{project_name}}  
 **repos**: {{repo_count}}  
 **packages**: {{package_count}}  
 **services**: {{service_count}}  
 
-### 📦 repositories created
+### Repositories created
 - `{{name}}-xyz` → web platform
 - `{{name}}-apple` → iOS/macOS app
 
-### ✨ key features
+### Key features
 {{#each features}}
 - {{feature}}
 {{/each}}
 
-### 🚀 tech stack
-- ⚡ Next.js 15 + React 19
-- 🎨 Tailwind CSS v4
-- 🔧 Drizzle + PostgreSQL
-- 🤖 Mastra AI framework
-- 🔐 Clerk authentication
+### Tech stack
+- Next.js 15 + React 19
+- Tailwind CSS v4
+- Drizzle + PostgreSQL
+- Mastra AI framework
+- Clerk authentication
 
-### 💻 quick start
+### Quick start
 ```bash
 cd {{name}}-xyz
 pnpm install
@@ -298,16 +298,16 @@ pnpm dev
 
 **next steps**: [BUILD] [DEPLOY] [DOCS]
 
-### 🎯 next command
+### Next command
 
 <!-- analyze context and generate perfect next command with PRD -->
 <use>@next-command</use>
 ---
-✨ ecosystem architected. ready to build!
+Ecosystem architected. ready to build!
 </output_format>
 
 <error_handling>
-## ⚠️ creation warning
+## Creation warning
 
 **warning**: {{warning_type}}  
 **message**: {{warning_message}}  

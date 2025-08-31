@@ -324,8 +324,8 @@ enhancement_workflow:
 
 ## Anti-Patterns
 
-- ❌ Forcing unnatural command sequences
-- ❌ Losing context between commands
-- ❌ Circular dependencies
-- ❌ Overloading session with all context
-- ❌ Ignoring user's workflow preferences
+- Forcing unnatural command sequences
+- Losing context between commands
+- Circular dependencies
+- Overloading session with all context
+- Ignoring user's workflow preferences

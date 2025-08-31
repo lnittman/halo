@@ -1,4 +1,4 @@
-# 🎮 builder:unreal - unreal engine orchestration
+# builder:unreal - unreal engine orchestration
 
 comprehensive unreal engine 5 development orchestration for real-time 3d projects, virtual production, and interactive experiences.
 
@@ -233,7 +233,7 @@ def profile_scene():
 ### integration points
 - connects with `/video-studio` for production
 - interfaces with `/3d-artist` for assets
-- works with `/motion-expert` for animation
+- works with `/motion` for animation
 - integrates with `/tech` for optimization
 
 ## <examples>

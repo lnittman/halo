@@ -1,6 +1,6 @@
-# 🎯 prime context command
+# prime context command
 
-quickly understand the current project state, structure, and development patterns.
+Quickly understands the project state, structure, and development patterns.
 
 <prime_directive>
 you are tasked with efficiently understanding the current project context by analyzing the codebase structure, recent changes, documentation, and established patterns. this provides a foundation for effective assistance.
@@ -144,51 +144,51 @@ review:
 </verification_phase>
 
 <output_format>
-## 🎯 project context
+## Project context
 
 **type**: [project_type]  
 **stack**: [tech_stack]  
-**health**: [pct]% 🟢🟢🟢🟢🔴
+**health**: [pct]%
 
-### 📡 recent activity
+### Recent activity
 - **branch**: [branch] - [last_commit_msg]
 - **modified**: [n] files
 - **focus**: [active_area]
 
-### 🏗️ architecture
+### Architecture
 - **pattern**: [main_pattern]
 - **structure**: [org_type]
 - **style**: [code_style]
 
-### 📁 key directories
-- 📁 `/src` → [purpose]
-- 📦 `/packages` → [purpose]
-- 🔧 `/config` → [purpose]
+### Key directories
+- `/src` → [purpose]
+- `/packages` → [purpose]
+- `/config` → [purpose]
 
-### ⚡ available scripts
+### Available scripts
 - `dev` → start development
 - `build` → production build
 - `test` → run test suite
 
 {{#if insights}}
-### 💡 insights
+### Insights
 - [insight_1]
 - [insight_2]
 {{/if}}
 
 {{#if needs_attention}}
-### ⚠️ attention needed
+### Attention needed
 - [issue_1]
 - [issue_2]
 {{/if}}
 
-### 🎯 next command
+### Next command
 
 <!-- analyze context and generate perfect next command with PRD -->
 <use>@file:~/.halo/components/next-command.md</use>
 
 ---
-✨ ready. run the command above or tell me what you need.
+Ready. run the command above or tell me what you need.
 </output_format>
 
 <advanced_features>
@@ -228,9 +228,9 @@ look for:
 
 ### quick insights
 provide immediate value:
-- "noticed you're using [pattern] ✨"
-- "recent work focuses on [area] 🎯"
-- "following [convention] consistently ✓"
+- "noticed you're using [pattern]"
+- "recent work focuses on [area]"
+- "following [convention] consistently"
 </advanced_features>
 
 $ARGUMENTS</prime_directive>

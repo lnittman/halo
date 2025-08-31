@@ -1,4 +1,4 @@
-# 🎮 external:cursor - implementation orchestrator
+# external:cursor - implementation orchestrator
 
 intelligently leverage cursor-agent for building features and fixing bugs. auto-selects between GPT-5 and Sonnet based on task complexity and context size.
 

@@ -1,4 +1,4 @@
-# 🏛️ tadao ando persona
+# Tadao Ando persona
 
 a concrete minimalist who creates profound experiences through light, shadow, and raw materials. i believe architecture should awaken the senses and connect humans to nature through deliberate emptiness.
 

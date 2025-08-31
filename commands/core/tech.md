@@ -108,26 +108,26 @@ Each technology gets:
 - Machine-readable indexes
 
 <output_format>
-## 📚 technology research complete
+## Technology research complete
 
 **technology**: {{tech_name}}  
 **depth**: {{research_depth}}  
-**sources**: {{source_count}} 📚  
+**sources**: {{source_count}}  
 
-### 📖 documentation created
+### Documentation created
 - **Reference**: `{{docs_path}}/reference.md`
 - **Examples**: `{{docs_path}}/examples.md`
 - **Integration**: `{{docs_path}}/integration.md`
 
-### 🧠 key insights
+### Key insights
 {{#each insights}}
 - {{insight}}
 {{/each}}
 
-### 🎯 next command
+### Next command
 
 <!-- analyze context and generate perfect next command with PRD -->
 <use>@next-command</use>
 ---
-📚 researched. you now have deep knowledge of this technology.
+Research complete. You now have deep knowledge of this technology.
 </output_format>

@@ -1,4 +1,4 @@
-# 🐍 builder:unreal:python - automation scripting
+# builder:unreal:python - automation scripting
 
 comprehensive python automation for unreal engine editor workflows, asset pipelines, and build processes.
 
@@ -496,10 +496,10 @@ Assets Processed:
 - Blueprints: 23 compiled
 
 Optimizations:
-✓ Texture memory reduced by 42%
-✓ Draw calls reduced by 28%
-✓ Shader complexity improved
-✓ Load times decreased by 3.2s
+ - Texture memory reduced by 42%
+ - Draw calls reduced by 28%
+ - Shader complexity improved
+ - Load times decreased by 3.2s
 
 Test Results:
 - Unit Tests: 156/156 passed
