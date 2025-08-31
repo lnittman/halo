@@ -11,3 +11,14 @@
 # Temporary files
 *.tmp
 *.temp
+
+
+# START Ruler Generated Files
+*.bak
+.cursor/rules/halo.md
+.cursor/rules/halo.md.bak
+AGENTS.md
+AGENTS.md.bak
+CLAUDE.md
+CLAUDE.md.bak
+# END Ruler Generated Files

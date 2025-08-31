@@ -1,0 +1,57 @@
+# Halo Universal Prompt Framework - Ruler Configuration
+# This configures how ruler generates documentation for each AI CLI tool
+
+# Default agents to generate configs for
+default_agents = ["claude", "cursor", "codex", "gemini-cli"]
+
+# --- Agent-Specific Configurations ---
+[agents.claude]
+enabled = true
+output_path = "CLAUDE.md"
+
+[agents.cursor]
+enabled = true
+output_path = ".cursor/rules/halo.md"
+
+[agents.cursor.mcp]
+enabled = true
+merge_strategy = "merge"
+
+[agents.codex]
+enabled = true
+output_path = "AGENTS.md"
+output_path_config = ".codex/config.toml"
+
+[agents.gemini-cli]
+enabled = true
+output_path = "AGENTS.md"
+
+[agents.amp]
+enabled = true
+output_path = "AGENTS.md"
+
+[agents.copilot]
+enabled = false
+output_path = ".github/copilot-instructions.md"
+
+[agents.windsurf]
+enabled = false
+output_path = "AGENTS.md"
+
+[agents.aider]
+enabled = false
+output_path = "AGENTS.md"
+
+[agents.cline]
+enabled = false
+output_path = "AGENTS.md"
+
+# --- Global Settings ---
+[gitignore]
+enabled = true
+respect_gitignore = true
+
+[output]
+format = "markdown"
+include_timestamp = true
+include_version = true
