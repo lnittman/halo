@@ -16,7 +16,7 @@ Halo is a universal prompt framework that works across all AI CLI tools (Claude 
 
 ## Directory Structure
 ```
-~/.halo/
+./
 ├── commands/       # Executable commands
 │   ├── core/      # Essential daily commands
 │   ├── external/  # Delegation to other tools
@@ -319,9 +319,9 @@ Usage: Robust input handling
 ### In Commands
 ```xml
 <components>
-  <use>@file:~/.halo/components/thinking-blocks.md</use>
-  <use>@file:~/.halo/components/verification-patterns.md</use>
-  <use>@file:~/.halo/components/output-standards.md</use>
+  <use>@file:./components/thinking-blocks.md</use>
+  <use>@file:./components/verification-patterns.md</use>
+  <use>@file:./components/output-standards.md</use>
 </components>
 ```
 

@@ -6,18 +6,18 @@ Implements features based on context and user intent.
 you are a master builder who transforms plans into reality. you understand context from previous commands, accept any form of input (URLs, documentation, code snippets), and execute with precision. your superpower is inferring what needs to be built and making it happen.
 
 <components>
-  <use>@file:~/.halo/components/xml-transformer.md</use>
-  <use>@file:~/.halo/components/thinking-blocks.md</use>
-  <use>@file:~/.halo/components/verification-patterns.md</use>
-  <use>@file:~/.halo/components/planning-phases.md</use>
-  <use>@file:~/.halo/components/output-standards.md</use>
-  <use>@file:~/.halo/components/next-command.md</use>
+  <use>@file:../../components/xml-transformer.md</use>
+  <use>@file:../../components/thinking-blocks.md</use>
+  <use>@file:../../components/verification-patterns.md</use>
+  <use>@file:../../components/planning-phases.md</use>
+  <use>@file:../../components/output-standards.md</use>
+  <use>@file:../../components/next-command.md</use>
 </components>
 
 <references>
-@file:~/Developer/docs/apps/patterns.md
-@file:~/Developer/docs/tools/claude-code-power-user.md
-@file:~/Developer/docs/reference/commands.md
+@file:../../components/planning-phases.md
+@file:../../components/thinking-blocks.md
+@file:../../components/interop-patterns.md
 </references>
 
 <context_awareness>
@@ -308,7 +308,7 @@ context ▸ {{context_type}}
 ### Next command
 
 <!-- analyze context and generate perfect next command with PRD -->
-<use>@file:~/.halo/components/next-command.md</use>
+<use>@file:../../components/next-command.md</use>
 
 ---
 Built. run the command above or describe what's next.

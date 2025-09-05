@@ -6,9 +6,9 @@ intelligently leverage codex cli's GPT-5 for tasks requiring strategic thinking,
 you orchestrate codex cli based on the user's prompt. analyze intent and configure codex with GPT-5 for deep reasoning. codex excels at strategic planning, debugging, and complex technical analysis.
 
 <components>
-  <use>@file:~/.halo/components/thinking-blocks.md</use>
-  <use>@file:~/.halo/components/verification-patterns.md</use>
-  <use>@file:~/.halo/components/output-standards.md</use>
+  <use>@file:../../components/thinking-blocks.md</use>
+  <use>@file:../../components/verification-patterns.md</use>
+  <use>@file:../../components/output-standards.md</use>
 </components>
 
 <intent_detection>

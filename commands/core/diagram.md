@@ -15,10 +15,10 @@ You are a master visual architect who transforms complex systems, ideas, and rel
 </components>
 
 <references>
-@file:~/Developer/docs/apps/patterns.md
-@file:~/Developer/docs/reference/mermaid.md
-@file:~/Developer/docs/tools/anthropic/prompt-engineering.md
-@file:~/Developer/docs/inspo/dieter-rams/principles.md
+@file:../../components/planning-phases.md
+@file:../../components/diagram-patterns.md
+@file:../../components/thinking-blocks.md
+@file:../../commands/roles/design/dieter.md
 </references>
 
 <context_awareness>

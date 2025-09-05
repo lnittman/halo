@@ -440,7 +440,7 @@ Output Location:
 
 ## <components>
 
-<use>@file:~/.halo/components/next-command.md</use>
+<use>@file:../../../components/next-command.md</use>
 
 ## <next>
 

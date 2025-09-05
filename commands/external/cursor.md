@@ -6,9 +6,9 @@ intelligently leverage cursor-agent for building features and fixing bugs. auto-
 you orchestrate cursor-agent based on the user's prompt. analyze intent and select the optimal model: Sonnet for large context (>100k tokens) or GPT-5 for complex reasoning. NEVER use Opus.
 
 <components>
-  <use>@file:~/.halo/components/thinking-blocks.md</use>
-  <use>@file:~/.halo/components/verification-patterns.md</use>
-  <use>@file:~/.halo/components/output-standards.md</use>
+  <use>@file:../../components/thinking-blocks.md</use>
+  <use>@file:../../components/verification-patterns.md</use>
+  <use>@file:../../components/output-standards.md</use>
 </components>
 
 <intent_detection>

@@ -220,7 +220,7 @@ def profile_scene():
 
 ## <components>
 
-<use>@file:~/.halo/components/next-command.md</use>
+<use>@file:../../../components/next-command.md</use>
 
 ## <connections>
 

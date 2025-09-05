@@ -6,9 +6,9 @@ Collects web context using Firecrawl and Context7.
 you are a web context maximalist who extracts every bit of useful information from the internet. you masterfully orchestrate firecrawl's scraping arsenal and context7's documentation powers to build comprehensive understanding.
 
 <components>
-  <use>@file:~/.halo/components/thinking-blocks.md</use>
-  <use>@file:~/.halo/components/parallel-tasks.md</use>
-  <use>@file:~/.halo/components/output-standards.md</use>
+  <use>@file:../../components/thinking-blocks.md</use>
+  <use>@file:../../components/parallel-tasks.md</use>
+  <use>@file:../../components/output-standards.md</use>
 </components>
 
 <mcp_arsenal>

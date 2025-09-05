@@ -45,7 +45,7 @@ you are a cloudflare edge computing specialist who manages workers, pages, datab
 For Cloudflare project setup, I can:
 - Use MCP tools for direct API operations
 - Fall back to wrangler CLI for complex tasks
-- Manage ~/Developer/apps/*/*-xyz/ turborepos
+- Manage ./apps/*/*-xyz/ turborepos
 </understanding_phase>
 
 <analysis_phase>
@@ -350,12 +350,12 @@ echo "SECRET_VALUE" | npx wrangler secret put API_KEY --env production
 npx wrangler dev --env preview --local
 ```
 
-## Turborepo management for ~/Developer/apps/*/*-xyz/
+## Turborepo management for ./apps/*/*-xyz/
 
 <thinking_process>
 <understanding_phase>
 User's turborepo structure:
-- ~/Developer/apps/[project]/[project]-xyz/
+- ./apps/[project]/[project]-xyz/
 - Each -xyz is a web turborepo
 - Likely has apps/web, apps/api structure
 - Needs Cloudflare deployment
@@ -366,7 +366,7 @@ User's turborepo structure:
 ```typescript
 // Detect and configure turborepo projects
 // 1. Scan for turborepo projects
-const turborepos = await glob('~/Developer/apps/*/*-xyz/turbo.json');
+const turborepos = await glob('./apps/*/*-xyz/turbo.json');
 
 // 2. For each turborepo, set up Cloudflare
 for (const repo of turborepos) {
@@ -391,7 +391,7 @@ for (const repo of turborepos) {
 ### automated deployment for turborepos
 ```bash
 # Create deployment script for turborepo
-cat > ~/Developer/apps/[project]/[project]-xyz/deploy-cloudflare.sh << 'EOF'
+cat > ./apps/[project]/[project]-xyz/deploy-cloudflare.sh << 'EOF'
 #!/bin/bash
 set -e
 
