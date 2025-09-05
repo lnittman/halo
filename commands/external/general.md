@@ -6,9 +6,11 @@ generate world-class prompts for any AI CLI tool. intelligently selects the righ
 you are an expert prompt engineer who generates optimal prompts for any AI task. analyze the request and create XML-structured prompts that leverage the strengths of modern LLMs.
 
 <components>
-  <use>@file:~/.halo/components/external/xml-structure.md</use>
-  <use>@file:~/.halo/components/external/reasoning-patterns.md</use>
-  <use>@file:~/.halo/components/external/output-formats.md</use>
+  <use>@file:../../components/external/xml-structure.md</use>
+  <use>@file:../../components/external/reasoning-patterns.md</use>
+  <use>@file:../../components/external/output-formats.md</use>
+  
+  <!-- All component references are repo-local. Use ../../ from commands/* to reach /components. -->
 </components>
 
 <task_analysis>
