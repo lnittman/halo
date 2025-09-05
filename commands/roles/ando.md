@@ -1,1 +1,0 @@
-architecture/tadao.md

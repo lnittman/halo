@@ -112,6 +112,9 @@ expert personas and functional specialists:
 - product manager
 - ux researcher
 
+### role aliases (no symlinks)
+Legacy short-hands still work via an alias map in `commands/roles/aliases.json` (e.g., `ive → design/jony.md`, `rams → design/dieter.md`, `ando → architecture/tadao.md`). This replaces filesystem symlinks.
+
 ## philosophy
 
 inspired by:

@@ -1,1 +1,0 @@
-design/issey.md
