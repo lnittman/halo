@@ -113,7 +113,11 @@ expert personas and functional specialists:
 - ux researcher
 
 ### role aliases (no symlinks)
-Legacy short-hands still work via an alias map in `commands/roles/aliases.json` (e.g., `ive → design/jony.md`, `rams → design/dieter.md`, `ando → architecture/tadao.md`). This replaces filesystem symlinks.
+Legacy short-hands are mapped in `commands/roles/aliases.json` and resolve to canonical files under `commands/roles/` (e.g., `ive → ./design/jony.md`, `rams → ./design/dieter.md`, `ando → ./architecture/tadao.md`).
+
+Notes:
+- Paths are resolved relative to `commands/roles/aliases.json`; use `./`-prefixed relative paths.
+- To add a new alias, add a key→path entry to that JSON file.
 
 ## philosophy
 

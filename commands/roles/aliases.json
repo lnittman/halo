@@ -1,10 +1,10 @@
 {
-  "ando": "architecture/tadao.md",
-  "ive": "design/jony.md",
-  "rams": "design/dieter.md",
-  "hara": "design/kenya.md",
-  "miyake": "design/issey.md",
-  "teenage-engineering": "design/teenage.md",
-  "rubin": "music/rick.md",
-  "victor": "visionary/bret.md"
+  "ando": "./architecture/tadao.md",
+  "ive": "./design/jony.md",
+  "rams": "./design/dieter.md",
+  "hara": "./design/kenya.md",
+  "miyake": "./design/issey.md",
+  "teenage-engineering": "./design/teenage.md",
+  "rubin": "./music/rick.md",
+  "victor": "./visionary/bret.md"
 }
