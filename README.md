@@ -1,187 +1,123 @@
 # halo
 
-minimalist coding agent system with personality.
+universal prompt framework for AI CLI tools. one system, many contexts.
 
-## what is halo?
-
-halo transforms verbose AI interactions into clean, readable experiences. think of it as a design system for coding agents — making them more human, more useful, more you.
-
-### key features
-
-- **lowercase vibes** - relaxed, approachable tone
-- **clear cues** - focused, readable structure for clarity
-- **clean output** - no walls of text
-- **personality** - subtle, not overwhelming
-
-## quick start
+## installation
 
 ```bash
-# use any halo command
-/prime    # understand your project
-/build    # implement features
-/create   # scaffold new projects
-/vision   # explore possibilities
+git clone https://github.com/lnittman/halo.git ~/.halo
+cd ~/.halo
+echo 'export PATH="$HOME/.halo:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+## usage
+
+```bash
+/prime                     # analyze project context
+/build feature-name        # implement features
+/test                      # generate tests
+/docs                      # create documentation
+
+/external:codex task       # deep reasoning & debugging
+/external:gemini audit     # comprehensive codebase analysis
+/external:claude task      # orchestration with MCP tools
+/external:charlie task     # autonomous TypeScript via GitHub
 ```
 
 ## structure
 
 ```
-.halo/
-├── README.md           # you are here
-├── halo-style-guide.md # the vibe
-├── commands/           # all commands (includes specialist command prompts)
-├── components/         # reusable parts
-├── roles/              # expert personas (referenced by commands)
-└── rules/              # coding standards
+~/.halo/
+├── commands/           # executable commands
+│   ├── core/          # essential commands
+│   ├── external/      # tool orchestration
+│   ├── creative/      # specialized workflows
+│   └── roles/         # persona perspectives
+├── components/         # reusable patterns
+│   └── external/      # structured prompt templates
+└── .ruler/            # configuration source
 ```
 
-## the halo style
+## core commands
 
-### text rules
-- **lowercase everything** (except acronyms: AI, API, etc.)
-- **clear, minimal formatting** (no decorative symbols)
-- **concise & direct** (no fluff)
+- `/prime` - analyze project structure and context
+- `/build` - implement features with existing patterns  
+- `/test` - generate comprehensive test suites
+- `/docs` - create technical documentation
+- `/create` - scaffold new projects
+- `/fix` - debug and resolve issues
+- `/diagram` - generate visual architecture
 
-### example output
-```markdown
-## build complete
+## external commands
 
-**created**: 5 files
-**time**: 1.3s
-**next**: [TEST] [DEPLOY]
-```
+orchestrate specialized AI tools:
 
-### not this
-```markdown
-## Build Successfully Completed!
+- `/external:codex` - GPT-5 for deep reasoning and debugging
+- `/external:gemini` - 2M context window for full codebase analysis
+- `/external:claude` - MCP tool orchestration and cross-project work
+- `/external:charlie` - autonomous TypeScript implementation via GitHub
+- `/external:general` - universal prompt generation for any tool
 
-I've successfully created 5 new files for you...
-[wall of text continues]
-```
+## components
 
-## commands
+reusable patterns across commands:
 
-### `/prime`
-understand your project context instantly
+- `xml-structure.md` - structured prompt templates
+- `reasoning-patterns.md` - CoT, CoVe, ReAct patterns
+- `output-formats.md` - standardized response structures
+- `thinking-blocks.md` - transparent reasoning display
+- `verification-patterns.md` - safety checks
 
-### `/build`
-transform ideas into working code
+## configuration
 
-### `/create`
-scaffold complete project ecosystems
+`.ruler/` contains:
+- coding standards
+- project structure patterns
+- delegation logic between tools
+- technology stack defaults
 
-### `/vision`
-explore transformative possibilities
+## external tool workflow
 
-### `/design`
-audit and document design systems
-
-### `/docs`
-comprehensive documentation operations
-
-### `/brand`
-create world-class brand identities
-
-## agents
-
-each agent has a personality that matches their purpose:
-
-- **simplify-design** - minimalist refactoring expert
-- **polish-interface** - detail-oriented perfectionist
-- **audit-codebase** - thorough quality checker
-- **tech-docs** - documentation aggregation specialist
-- **github-whisperer** - git and github operations expert
-- **cloudflare-whisperer** - cloudflare services specialist
-- **test-coverage** - comprehensive testing specialist
-- **dependency-doctor** - package management expert
-- **linear-whisperer** - project tracking sync specialist
-
-## roles
-
-expert personas and functional specialists:
-
-**personas**:
-- rick rubin - zen creative guidance
-- dieter rams - minimalist design philosophy
-- jony ive - obsessive simplification
-- teenage engineering - playful utility
-
-**functions**:
-- full-stack architect
-- ai integration specialist
-- product manager
-- ux researcher
-
-
-
-## philosophy
-
-inspired by:
-- **teenage engineering** - constraints breed creativity
-- **dieter rams** - less, but better
-- **80s-90s computing** - when interfaces had soul
-
-## customization
-
-### modify commands
-edit any `.md` file in `/commands/` to adjust behavior
-
-### change style
-update `halo-style-guide.md` to match your vibe
-
-### add roles
- drop new personas in `/roles/` folder
-
-### create roles
-add expert personas in `/roles/` directory
-
-## tips
-
-1. **be direct** - halo understands context
-2. **be concise** - commands work without prefixes
-3. **chain commands** - they share context
-4. **trust the vibe** - let halo's personality shine
-
-## examples
-
-### understand a project
 ```bash
-/prime
-# instant context about your codebase
+# 1. generate world-class prompt
+/external:codex debug authentication issue
+
+# 2. copy generated XML prompt
+# 3. run target CLI tool
+codex
+
+# 4. paste prompt into tool
 ```
 
-### build a feature
+charlie workflow (special case):
 ```bash
-/build add dark mode to settings
-# implements with your patterns
+/external:charlie implement new feature
+# creates GitHub issue automatically
+# manually add @CharlieHelps comment to trigger
 ```
 
-### create an app
+## requirements
+
+- bash/zsh shell
+- git
+- gh CLI (for charlie)
+- target AI CLI tools as needed
+
+## extending
+
+add new commands:
 ```bash
-/create weather-app
-# full ecosystem scaffolded
+touch commands/custom/your-command.md
 ```
 
-## compatibility
+add personas:
+```bash
+touch commands/roles/your-persona.md
+```
 
-halo works with:
-- claude code (primary)
-- github copilot
-- cursor
-- any AI that reads markdown
-
----
-
-*remember: less noise, more signal. that's halo.*
+commands adapt to available tools and degrade gracefully when dependencies are missing.
 
 ## license
 
-MIT - do whatever makes you happy
-
-## contributing
-
-keep it simple, keep it clean, keep it halo.
-
----
-
-made by developers who prefer lowercase
+MIT
