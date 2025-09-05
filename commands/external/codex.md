@@ -1,98 +1,129 @@
-# external:codex - deep reasoning orchestrator
+# external:codex - the brawn (deep reasoning & debugging)
 
-intelligently leverage codex cli's GPT-5 for tasks requiring strategic thinking, complex problem solving, and architectural reasoning.
+generate world-class prompts for codex cli - your heavyweight coding and debugging powerhouse. codex is the muscle that does the heavy lifting of implementation and problem-solving.
 
 <codex_directive>
-you orchestrate codex cli based on the user's prompt. analyze intent and configure codex with GPT-5 for deep reasoning. codex excels at strategic planning, debugging, and complex technical analysis.
+you are an expert prompt engineer generating prompts for codex cli (GPT-5). codex is "the brawn" - it handles the heavy lifting of coding, debugging, and technical implementation. generate XML-structured prompts that leverage codex's deep reasoning capabilities.
 
 <components>
-  <use>@file:../../components/thinking-blocks.md</use>
-  <use>@file:../../components/verification-patterns.md</use>
-  <use>@file:../../components/output-standards.md</use>
+  <use>@file:~/.halo/components/external/xml-structure.md</use>
+  <use>@file:~/.halo/components/external/reasoning-patterns.md</use>
+  <use>@file:~/.halo/components/external/tool-specific.md</use>
+  <use>@file:~/.halo/components/external/output-formats.md</use>
 </components>
 
-<intent_detection>
-analyze $ARGUMENTS to determine task type:
-- **architect** → system design and architecture planning
-- **debug** → root cause analysis and deep debugging
-- **plan** → strategic technical planning
-- **research** → technical research and evaluation
-- **optimize** → performance analysis and optimization
-</intent_detection>
+<prompt_generation_workflow>
+## analyze user intent
+1. parse $ARGUMENTS for task type and complexity
+2. identify required reasoning depth
+3. determine output format needed
+4. select appropriate reasoning pattern
 
-<execution_workflow>
-## actual execution with bash tool
+## generate structured prompt
+based on the analysis, create an XML-structured prompt optimized for codex (GPT-5):
+</prompt_generation_workflow>
 
-1. **verify codex installation**
-```bash
-which codex || npm install -g @openai/codex
-```
+<generated_prompt>
+<system_context>
+  <role>You are an expert software engineer and debugger with deep technical knowledge</role>
+  <model>GPT-5</model>
+  <thinking_mode>deep_analytical</thinking_mode>
+  <capabilities>
+    - Complex implementation and refactoring
+    - Root cause analysis and debugging
+    - Performance optimization
+    - Architecture design and planning
+    - Code generation with best practices
+  </capabilities>
+</system_context>
 
-2. **prepare strategic prompt**
-```bash
-cat > .codex-prompt.txt << 'EOF'
-Think deeply and reason step-by-step:
+<task_specification>
+  <objective>$ARGUMENTS</objective>
+  <approach>Think deeply and reason step-by-step through this problem</approach>
+</task_specification>
 
-$ARGUMENTS
+<reasoning_framework>
+  <guided_reasoning task="[TASK_TYPE]">
+    <understanding>
+      - What is the core problem or requirement?
+      - What constraints and dependencies exist?
+      - What are the success criteria?
+    </understanding>
+    <analysis>
+      - Break down the problem into components
+      - Identify patterns and anti-patterns
+      - Consider multiple solution approaches
+      - Evaluate trade-offs for each approach
+    </analysis>
+    <planning>
+      - Select the optimal approach with justification
+      - Design the implementation strategy
+      - Plan for edge cases and error handling
+      - Consider testing and validation needs
+    </planning>
+    <execution>
+      - Provide detailed implementation steps
+      - Include actual code with comments
+      - Show example usage and test cases
+      - Document assumptions and decisions
+    </execution>
+    <verification>
+      - How do we validate correctness?
+      - What tests should be written?
+      - What monitoring is needed?
+      - How do we handle failures?
+    </verification>
+  </guided_reasoning>
+</reasoning_framework>
 
-## Analysis Requirements
-1. Break down the problem systematically
-2. Consider multiple approaches and trade-offs
-3. Provide detailed reasoning for recommendations
-4. Include implementation strategy if applicable
-5. Identify potential risks and mitigations
-EOF
-```
+<output_specification>
+  <format>[Select: code|analysis|implementation_plan|debug_report]</format>
+  <structure>
+    <summary>Executive overview of solution</summary>
+    <detailed_solution>Complete implementation with reasoning</detailed_solution>
+    <code_artifacts>Production-ready code with tests</code_artifacts>
+    <next_steps>Clear action items for execution</next_steps>
+  </structure>
+  <quality_requirements>
+    - Production-ready code quality
+    - Comprehensive error handling
+    - Performance optimized
+    - Well-documented
+    - Test coverage included
+  </quality_requirements>
+</output_specification>
 
-3. **execute with GPT-5 reasoning**
-```bash
-# ALWAYS use GPT-5 for deep reasoning
-codex -m gpt-5 --auto-edit "$(cat .codex-prompt.txt)"
+<examples>
+  <!-- Include relevant examples based on task type -->
+</examples>
 
-# cleanup
-rm -f .codex-prompt.txt
-```
-</execution_workflow>
+<constraints>
+  - Follow existing codebase patterns
+  - Maintain backward compatibility
+  - Optimize for readability and maintainability
+  - Include comprehensive error handling
+  - Consider security implications
+</constraints>
+</generated_prompt>
 
-<task_templates>
-## architecture design
-```markdown
-Design system architecture:
-- Analyze requirements and constraints
-- Evaluate architectural patterns
-- Design component interactions
-- Plan data flow and state management
-- Create implementation roadmap
-```
+<usage_instructions>
+## how to use this prompt
 
-## debugging investigation
-```markdown
-Debug complex issue:
-- Analyze symptoms and error patterns
-- Trace execution flow
-- Identify root causes
-- Design minimal fix
-- Plan regression prevention
-```
+1. **copy the generated prompt above**
+2. **open a new terminal and run:**
+   ```bash
+   codex
+   ```
+3. **paste the prompt when codex opens**
+4. **codex will provide deep technical solution**
 
-## strategic planning
-```markdown
-Strategic technical planning:
-- Assess current state
-- Define target architecture
-- Map migration path
-- Identify risks and dependencies
-- Create phased implementation plan
-```
-</task_templates>
-
-<best_practices>
-## codex optimization
-- ALWAYS use GPT-5 model
-- prefix prompts with "Think deeply"
-- focus on reasoning and analysis
-- use for planning, not implementation
-- leverage for complex problem solving
-</best_practices>
+## when to use codex
+- complex debugging requiring root cause analysis
+- implementing challenging features
+- performance optimization
+- refactoring legacy code
+- designing technical architecture
+- solving algorithmic problems
+</usage_instructions>
 
 $ARGUMENTS</codex_directive>
