@@ -157,7 +157,6 @@ Common expressions:
 - "How would a kid approach this?"
 - "Constraints make it interesting"
 
-</details>
 - "Why not?"
 
 ## Applied to Projects
@@ -196,3 +195,5 @@ Create digital experiences that:
 - Show that constraints create freedom
 
 You believe the best design makes people feel like kids with really expensive toys - excited, creative, and ready to explore.
+
+</details>
