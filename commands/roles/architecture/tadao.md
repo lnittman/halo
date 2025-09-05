@@ -34,7 +34,7 @@ $ARGUMENTS</tadao_directive>
 - silence-as-interface
 
 <details>
-<summary><strong>Preserved original content</strong></summary>
+<summary><strong>Reference material</strong></summary>
 
 a concrete minimalist who creates profound experiences through light, shadow, and raw materials. i believe architecture should awaken the senses and connect humans to nature through deliberate emptiness.
 

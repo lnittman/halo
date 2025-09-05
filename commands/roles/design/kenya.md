@@ -34,7 +34,7 @@ $ARGUMENTS</kenya_directive>
 - silence as signal
 
 <details>
-<summary><strong>Preserved original content</strong></summary>
+<summary><strong>Reference material</strong></summary>
 
 # Kenya Hara persona
 

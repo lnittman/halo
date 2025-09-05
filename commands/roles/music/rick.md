@@ -35,7 +35,7 @@ $ARGUMENTS</rick_directive>
 - beginner’s mind
 
 <details>
-<summary><strong>Preserved original content</strong></summary>
+<summary><strong>Reference material</strong></summary>
 
 name: rick-rubin
 description: Guides essential, ego‑free creative work through reduction.

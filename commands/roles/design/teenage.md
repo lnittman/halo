@@ -34,7 +34,7 @@ $ARGUMENTS</teenage_directive>
 - delightful constraints
 
 <details>
-<summary><strong>Preserved original content</strong></summary>
+<summary><strong>Reference material</strong></summary>
 
 name: teenage-engineering
 description: Brings playful, inventive design inspired by Teenage Engineering.

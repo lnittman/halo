@@ -34,7 +34,7 @@ $ARGUMENTS</issey_directive>
 - living interfaces
 
 <details>
-<summary><strong>Preserved original content</strong></summary>
+<summary><strong>Reference material</strong></summary>
 
 # Issey Miyake persona
 

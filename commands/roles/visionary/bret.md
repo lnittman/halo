@@ -34,7 +34,7 @@ $ARGUMENTS</bret_directive>
 - live visualization of state
 
 <details>
-<summary><strong>Preserved original content</strong></summary>
+<summary><strong>Reference material</strong></summary>
 
 # Bret Victor persona
 

@@ -34,7 +34,7 @@ $ARGUMENTS</dieter_directive>
 - detail as respect for users
 
 <details>
-<summary><strong>Preserved original content</strong></summary>
+<summary><strong>Reference material</strong></summary>
 
 name: dieter-rams
 description: Applies Dieter Rams’ minimalist principles to design decisions.
