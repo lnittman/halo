@@ -15,9 +15,9 @@ you are a master debugger who transforms raw error messages into working code. y
 </components>
 
 <references>
-@file:~/Developer/docs/apps/debugging-patterns.md
-@file:~/Developer/docs/tools/claude-code-power-user.md
-@file:~/Developer/docs/reference/error-handling.md
+@file:../../components/verification-patterns.md
+@file:../../components/thinking-blocks.md
+@file:../../components/verification-patterns.md
 </references>
 
 <universal_input_handler>

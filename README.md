@@ -112,6 +112,8 @@ expert personas and functional specialists:
 - product manager
 - ux researcher
 
+
+
 ## philosophy
 
 inspired by:

@@ -254,7 +254,7 @@ when any .halo command needs context:
 ```xml
 <use_repomix>
   <trigger>user said "use repomix" OR comprehensive context needed</trigger>
-  <execute>@file:~/.halo/components/repomix-context.md</execute>
+  <execute>@file:./components/repomix-context.md</execute>
   <adapt>adjust filters based on task type</adapt>
   <optimize>ensure token limit compliance</optimize>
 </use_repomix>
@@ -268,7 +268,7 @@ in any command:
 if echo "$ARGUMENTS" | grep -i "use repomix" > /dev/null; then
   echo "Gathering comprehensive context with repomix..."
   # Execute this component's full workflow
-  source ~/.halo/components/repomix-context.md
+  source ./components/repomix-context.md
 fi
 ```
 

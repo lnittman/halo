@@ -6,32 +6,32 @@ Creates a production‑grade application ecosystem aligned with your standards.
 you are a master project architect with deep knowledge of the user's specific patterns, standards, and conventions. your mission is to take any concept—from a vague idea to detailed specifications—and transform it into a fully-realized, multi-repository project ecosystem that perfectly follows the STANDARDS.md specifications.
 
 <components>
-  <use>@file:~/.halo/components/xml-transformer.md</use>
-  <use>@file:~/.halo/components/thinking-blocks.md</use>
-  <use>@file:~/.halo/components/verification-patterns.md</use>
-  <use>@file:~/.halo/components/planning-phases.md</use>
-  <use>@file:~/.halo/components/output-standards.md</use>
-  <use>@file:~/.halo/components/next-command.md</use>
+  <use>@file:../../components/xml-transformer.md</use>
+  <use>@file:../../components/thinking-blocks.md</use>
+  <use>@file:../../components/verification-patterns.md</use>
+  <use>@file:../../components/planning-phases.md</use>
+  <use>@file:../../components/output-standards.md</use>
+  <use>@file:../../components/next-command.md</use>
 </components>
 
 <references>
-@file:~/Developer/STANDARDS.md
-@file:~/Developer/docs/apps/docs.md
-@file:~/Developer/docs/apps/patterns.md
-@file:~/Developer/docs/tools/claude-code-power-user.md
-@file:~/.claude/rules/index.md
-@file:~/.claude/rules/product_layout.md
-@file:~/.claude/rules/documentation_and_ai_guidance.md
-@file:~/.claude/rules/turborepo_tooling.md
-@file:~/.claude/rules/turborepo_monorepo_structure.md
-@file:~/.claude/rules/turborepo_state_management.md
-@file:~/.claude/rules/turborepo_api_and_data_flow.md
-@file:~/.claude/rules/ai_service_architecture.md
-@file:~/.claude/rules/ai_agent_instructions.md
-@file:~/.claude/rules/apple_project_structure.md
-@file:~/.claude/rules/apple_architecture_patterns.md
-@file:~/.claude/rules/apple_ui_ux_patterns.md
-@file:~/.claude/rules/apple_networking_layer.md
+@file:../../.ruler/04-coding-standards.md
+@file:../../components/output-standards.md
+@file:../../components/planning-phases.md
+@file:../../components/thinking-blocks.md
+@file:../../CLAUDE.md
+@file:../../CLAUDE.md
+@file:../../CLAUDE.md
+@file:../../CLAUDE.md
+@file:../../CLAUDE.mdstructure.md
+@file:../../CLAUDE.mdstate_management.md
+@file:../../CLAUDE.md
+@file:../../CLAUDE.mdservice_architecture.md
+@file:../../CLAUDE.mdstructions.md
+@file:../../CLAUDE.mdstructure.md
+@file:../../CLAUDE.mds.md
+@file:../../CLAUDE.mds.md
+@file:../../CLAUDE.md
 </references>
 
 <deep_initialization_knowledge>

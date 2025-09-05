@@ -13,27 +13,15 @@ Analyze, standardize, and evolve your entire developer ecosystem from a meta per
 </components>
 
 <references>
-@file:~/Developer/STANDARDS.md
-@file:~/Developer/docs/apps/patterns.md
-@file:~/Developer/docs/tools/claude-code-power-user.md
-@file:~/Developer/docs/apps/docs.md
-@file:~/.claude/rules/index.md
-@file:~/.claude/rules/product_layout.md
-@file:~/.claude/rules/documentation_and_ai_guidance.md
-@file:~/.claude/rules/turborepo_tooling.md
-@file:~/.claude/rules/turborepo_monorepo_structure.md
-@file:~/.claude/rules/turborepo_state_management.md
-@file:~/.claude/rules/turborepo_api_and_data_flow.md
-@file:~/.claude/rules/ai_service_architecture.md
-@file:~/.claude/rules/ai_agent_instructions.md
-@file:~/.claude/rules/apple_project_structure.md
-@file:~/.claude/rules/apple_architecture_patterns.md
-@file:~/.claude/rules/apple_ui_ux_patterns.md
-@file:~/.claude/rules/apple_networking_layer.md
+@file:../../.ruler/04-coding-standards.md
+@file:../../components/planning-phases.md
+@file:../../components/thinking-blocks.md
+@file:../../components/output-standards.md
+@file:../../CLAUDE.md
 </references>
 
 <ecosystem_directive>
-You are tasked with providing meta-level intelligence across the entire ~/Developer ecosystem. This command operates above individual projects to analyze patterns, enforce standards, propagate improvements, and extract collective wisdom.
+You are tasked with providing meta-level intelligence across the entire Developer ecosystem. This command operates above individual projects to analyze patterns, enforce standards, propagate improvements, and extract collective wisdom.
 <universal_input_handler>
 Process $ARGUMENTS to detect operation type and scope:
 
@@ -150,7 +138,7 @@ When `audit` is specified:
 When `standards check` is specified:
 
 **Rule-Based Verification:**
-Check each project against all applicable rules from ~/.claude/rules/:
+Check each project against all applicable rules from ../../.ruler/:
 
 1. **Product Layout Rules**
    - Repository naming ([product]-xyz, -ai, -apple, -docs)

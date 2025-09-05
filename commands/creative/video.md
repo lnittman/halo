@@ -20,7 +20,7 @@ the difference between amateur and professional videos is **showing the actual p
 ### NEW: ephemeral project system
 when invoked in any project, i automatically:
 1. **auto-detect** project type, framework, and components
-2. **create temporary symlinks** in ~/.video-studio without copying files
+2. **create temporary symlinks** in ./.video-studio without copying files
 3. **scan for real components** to use in the video
 4. **suggest appropriate templates** based on project type
 5. **clean up after rendering** to keep video-studio lean
@@ -34,7 +34,7 @@ $ claude
 # video-studio agent automatically:
  - Detects: Next.js 15, Tailwind v4, shadcn/ui
  - Found: 47 components, 12 pages, 5 features
- - Symlinked: ~/Developer/your-app → ~/.video-studio/.ephemeral/your-app
+ - Symlinked: ./your-app → ./.video-studio/.ephemeral/your-app
  - Template: product-showcase (20s professional demo)
 ```
 
@@ -91,10 +91,10 @@ $ claude
 ## Remotion setup
 
 ### enhanced video studio workspace
-the `~/.video-studio` repository is now a lean, intelligent system:
+the `./.video-studio` repository is now a lean, intelligent system:
 ```bash
 # core structure (permanent)
-~/.video-studio/
+./.video-studio/
 ├── src/                      # core remotion setup
 │   ├── core/                # new intelligent systems
 │   │   ├── project-detector.ts    # auto-detects project types
@@ -119,7 +119,7 @@ the `~/.video-studio` repository is now a lean, intelligent system:
 ### automatic project loading (new!)
 ```bash
 # from ANY project directory
-$ cd ~/Developer/apps/your-app/your-app-xyz
+$ cd ./apps/your-app/your-app-xyz
 $ npx video-studio load .
 
 # or let the agent handle it automatically
@@ -129,7 +129,7 @@ $ claude "create a product demo video"
 ### ephemeral project structure
 ```
 .ephemeral/your-app/         # temporary symlink (auto-created)
-├── source → ~/Developer/apps/your-app/your-app-xyz
+├── source → ./apps/your-app/your-app-xyz
 ├── components.json          # scanned component manifest
 ├── theme.json              # extracted design tokens
 └── config.json             # detected project config
@@ -535,7 +535,7 @@ export const twitterConfig = {
 ### cli commands
 ```bash
 # always work from video studio
-cd ~/.video-studio
+cd ./.video-studio
 
 # install dependencies (first time only)
 npm install
@@ -615,7 +615,7 @@ const detection = await projectDetector.analyze(projectPath);
 // NEVER copies files, only creates smart symlinks
 const project = await projectManager.load({
   name: 'your-app',
-  sourcePath: '~/Developer/apps/your-app/your-app-xyz',
+  sourcePath: './apps/your-app/your-app-xyz',
   autoCleanup: true // removes symlink after video renders
 });
 
@@ -766,7 +766,7 @@ the magic is that videos use the ACTUAL components from projects, making them au
 ### example invocation:
 ```bash
 # from any project
-$ cd ~/Developer/apps/your-app/your-app-xyz
+$ cd ./apps/your-app/your-app-xyz
 $ claude
 
 > create a product demo video showcasing our new analytics feature
@@ -778,7 +778,7 @@ Video Studio Agent:
  - Created: .ephemeral/your-app → [symlink]
  - Template: feature-explainer (18s)
  - Rendering: Showcasing analytics with real components...
-Output: ~/.video-studio/out/your-app-analytics-20241230-153042.mp4
+Output: ./.video-studio/out/your-app-analytics-20241230-153042.mp4
  - Cleaned: Removed ephemeral symlinks
 
 Your video is ready! It shows:

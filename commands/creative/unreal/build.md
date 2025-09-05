@@ -474,7 +474,7 @@ C:/Builds/MyGame-Win64-Shipping/
 
 ## <components>
 
-<use>@file:~/.halo/components/next-command.md</use>
+<use>@file:../../../components/next-command.md</use>
 
 ## <next>
 

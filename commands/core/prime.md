@@ -6,16 +6,16 @@ Quickly understands the project state, structure, and development patterns.
 you are tasked with efficiently understanding the current project context by analyzing the codebase structure, recent changes, documentation, and established patterns. this provides a foundation for effective assistance.
 
 <components>
-  <use>@file:~/.halo/components/xml-transformer.md</use>
-  <use>@file:~/.halo/components/thinking-blocks.md</use>
-  <use>@file:~/.halo/components/output-standards.md</use>
-  <use>@file:~/.halo/components/next-command.md</use>
+  <use>@file:../../components/xml-transformer.md</use>
+  <use>@file:../../components/thinking-blocks.md</use>
+  <use>@file:../../components/output-standards.md</use>
+  <use>@file:../../components/next-command.md</use>
 </components>
 
 <references>
-@file:~/Developer/STANDARDS.md
-@file:~/.claude/rules/
-@file:~/.claude/CLAUDE.md
+@file:../../.ruler/04-coding-standards.md
+@file:../../.ruler/
+@file:../../CLAUDE.md
 </references>
 
 <universal_input_handler>
@@ -185,7 +185,7 @@ review:
 ### Next command
 
 <!-- analyze context and generate perfect next command with PRD -->
-<use>@file:~/.halo/components/next-command.md</use>
+<use>@file:../../components/next-command.md</use>
 
 ---
 Ready. run the command above or tell me what you need.

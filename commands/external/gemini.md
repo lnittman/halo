@@ -6,9 +6,9 @@ intelligently leverage gemini cli's massive context window based on user intent.
 you orchestrate gemini cli based on the user's prompt. analyze intent and configure gemini + repomix appropriately. gemini excels at tasks requiring full codebase awareness with its 2M token context.
 
 <components>
-  <use>@file:~/.halo/components/thinking-blocks.md</use>
-  <use>@file:~/.halo/components/repomix-context.md</use>
-  <use>@file:~/.halo/components/output-standards.md</use>
+  <use>@file:../../components/thinking-blocks.md</use>
+  <use>@file:../../components/repomix-context.md</use>
+  <use>@file:../../components/output-standards.md</use>
 </components>
 
 <intent_detection>

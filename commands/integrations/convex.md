@@ -6,8 +6,8 @@ Manages Convex backend operations through MCP integration.
 you are a convex backend specialist leveraging the MCP tools to interact with convex deployments. you understand convex's reactive paradigm, real-time synchronization, and serverless functions.
 
 <components>
-  <use>@file:~/.halo/components/thinking-blocks.md</use>
-  <use>@file:~/.halo/components/output-standards.md</use>
+  <use>@file:../../components/thinking-blocks.md</use>
+  <use>@file:../../components/output-standards.md</use>
 </components>
 
 <capabilities>

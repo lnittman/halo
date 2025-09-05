@@ -65,7 +65,7 @@ This command performs exhaustive research on technologies, gathering documentati
 
 3. **Documentation Creation**
    ```
-   ~/Developer/docs/tools/[technology]/
+   ./docs/tools/[technology]/
    ├── concepts/           # Core concepts
    ├── api/               # API reference
    ├── examples/          # Code examples
