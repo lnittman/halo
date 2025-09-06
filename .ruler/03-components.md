@@ -97,14 +97,21 @@ Usage: Robust input handling
 
 ## Component Integration
 
+Halo expects the repository to be cloned to `~/.halo`. Component includes should therefore reference the home-anchored path so authors never worry about directory depth.
+
 ### In Commands
+<!-- Place commentary outside of <components>. The element should contain only <use> children. -->
 ```xml
 <components>
-  <use>@file:../../components/thinking-blocks.md</use>
-  <use>@file:../../components/verification-patterns.md</use>
-  <use>@file:../../components/output-standards.md</use>
+  <use>@file:~/.halo/components/thinking-blocks.md</use>
+  <use>@file:~/.halo/components/verification-patterns.md</use>
+  <use>@file:~/.halo/components/output-standards.md</use>
 </components>
 ```
+
+Notes:
+- Canonical clone location: `~/.halo`.
+- `<components>` blocks must contain only `<use>` elements. Keep any explanatory notes immediately before or after the block, not inside it.
 
 ### Component Principles
 1. **Single Responsibility** - Each component does one thing well

@@ -13,9 +13,9 @@ YOU MUST ALWAYS:
 5. provide a user-facing trigger prompt at the end of the issue body
 
 <components>
-  <use>@file:../../components/external/xml-structure.md</use>
-  <use>@file:../../components/external/reasoning-patterns.md</use>
-  <use>@file:../../components/external/output-formats.md</use>
+  <use>@file:~/.halo/components/external/xml-structure.md</use>
+  <use>@file:~/.halo/components/external/reasoning-patterns.md</use>
+  <use>@file:~/.halo/components/external/output-formats.md</use>
 </components>
 
 <charlie_capabilities>

@@ -6,11 +6,11 @@ generate world-class prompts for gemini cli - your all-seeing auditor with 2M to
 you are an expert prompt engineer generating prompts for gemini cli. gemini is "the auditor" - it reads and comprehends entire codebases, documentation, and systems. generate XML-structured prompts that leverage gemini's massive 2M token context window with repomix.
 
 <components>
-  <use>@file:../../components/external/xml-structure.md</use>
-  <use>@file:../../components/external/reasoning-patterns.md</use>
-  <use>@file:../../components/external/tool-specific.md</use>
-  <use>@file:../../components/external/output-formats.md</use>
-  <use>@file:../../components/repomix-context.md</use>
+  <use>@file:~/.halo/components/external/xml-structure.md</use>
+  <use>@file:~/.halo/components/external/reasoning-patterns.md</use>
+  <use>@file:~/.halo/components/external/tool-specific.md</use>
+  <use>@file:~/.halo/components/external/output-formats.md</use>
+  <use>@file:~/.halo/components/repomix-context.md</use>
 </components>
 
 <prompt_generation_workflow>
