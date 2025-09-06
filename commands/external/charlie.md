@@ -64,16 +64,17 @@ ISSUE_URL=$(gh issue create \
 ISSUE_NUMBER=$(echo $ISSUE_URL | sed 's/.*\/issues\///')
 ```
 
-## step 5: automatically trigger charlie with follow-up comment
+## step 5: prepare trigger command for user
+generate the exact gh CLI command the user can run when ready:
 ```bash
-# Add comment to trigger Charlie (he only responds to comments, not initial issue body)
-gh issue comment $ISSUE_NUMBER \
-  --repo "$REPO" \
-  --body "@CharlieHelps please handle this task"
+gh issue comment $ISSUE_NUMBER --repo "$REPO" --body "@CharlieHelps please handle this task"
 ```
 
-## step 6: return issue URL to user
-provide the GitHub issue URL with confirmation that Charlie has been triggered
+## step 6: return issue URL and trigger instructions
+provide:
+1. The GitHub issue URL
+2. A mini-PRD summary of the task
+3. The ready-to-use command to trigger Charlie when user is ready
 </orchestration_workflow>
 
 <generated_prompt>
@@ -153,8 +154,8 @@ The issue body should contain:
 2. Any additional context or links
 3. Success criteria and definition of done
 
-Note: Charlie will be automatically triggered via a follow-up comment.
-No manual trigger section needed in the issue body.
+Note: Charlie only responds to comments, not initial issue body.
+User will receive a ready-to-use trigger command after issue creation.
 </github_issue_body>
 
 <best_practices>
@@ -192,9 +193,12 @@ No manual trigger section needed in the issue body.
 2. **claude detects:** repository from git remotes
 3. **claude generates:** world-class XML prompt for charlie
 4. **claude creates:** GitHub issue via gh CLI (without @CharlieHelps)
-5. **claude automatically:** adds comment with `@CharlieHelps please handle this task`
-6. **charlie:** picks up task from the comment and executes autonomously
-7. **claude returns:** issue URL with confirmation Charlie is triggered
+5. **claude returns:** 
+   - Issue URL for review
+   - Mini-PRD summary of the task
+   - Ready-to-use command to trigger Charlie
+6. **you decide:** when to run the trigger command
+7. **charlie:** picks up task when you post the comment
 
 ## monitor charlie's progress
 - Charlie will comment on the issue with updates
