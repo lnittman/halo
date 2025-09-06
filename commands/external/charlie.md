@@ -54,14 +54,26 @@ create an optimized prompt for charlie's consumption:
 
 ## step 4: create github issue via gh CLI
 ```bash
-gh issue create \
+# Create issue and capture the URL
+ISSUE_URL=$(gh issue create \
   --repo "$REPO" \
   --title "[Charlie] <descriptive_task_title>" \
-  --body "<structured_prompt_without_charliehelps_mention>"
+  --body "<structured_prompt_without_charliehelps_mention>")
+
+# Extract issue number from URL
+ISSUE_NUMBER=$(echo $ISSUE_URL | sed 's/.*\/issues\///')
 ```
 
-## step 5: return issue URL to user
-provide the GitHub issue URL so user can manually trigger charlie
+## step 5: automatically trigger charlie with follow-up comment
+```bash
+# Add comment to trigger Charlie (he only responds to comments, not initial issue body)
+gh issue comment $ISSUE_NUMBER \
+  --repo "$REPO" \
+  --body "@CharlieHelps please handle this task"
+```
+
+## step 6: return issue URL to user
+provide the GitHub issue URL with confirmation that Charlie has been triggered
 </orchestration_workflow>
 
 <generated_prompt>
@@ -140,17 +152,9 @@ The issue body should contain:
 1. The full XML-structured prompt for charlie
 2. Any additional context or links
 3. Success criteria and definition of done
-4. At the VERY END, a user trigger section:
 
-```markdown
----
-
-## To trigger Charlie:
-**Add this comment to the issue after creation:**
-```
-@CharlieHelps please handle this task
-```
-```
+Note: Charlie will be automatically triggered via a follow-up comment.
+No manual trigger section needed in the issue body.
 </github_issue_body>
 
 <best_practices>
@@ -188,9 +192,9 @@ The issue body should contain:
 2. **claude detects:** repository from git remotes
 3. **claude generates:** world-class XML prompt for charlie
 4. **claude creates:** GitHub issue via gh CLI (without @CharlieHelps)
-5. **claude returns:** issue URL to you
-6. **you manually:** go to issue and add `@CharlieHelps please handle this task` comment
-7. **charlie:** picks up task and executes autonomously
+5. **claude automatically:** adds comment with `@CharlieHelps please handle this task`
+6. **charlie:** picks up task from the comment and executes autonomously
+7. **claude returns:** issue URL with confirmation Charlie is triggered
 
 ## monitor charlie's progress
 - Charlie will comment on the issue with updates
