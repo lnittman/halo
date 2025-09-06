@@ -5,10 +5,8 @@ universal prompt framework for AI CLI tools. one system, many contexts.
 ## installation
 
 ```bash
-git clone https://github.com/lnittman/halo.git ~/.halo
-cd ~/.halo
-echo 'export PATH="$HOME/.halo:$PATH"' >> ~/.zshrc
-source ~/.zshrc
+git clone https://github.com/lnittman/halo.git
+cd halo
 ```
 
 ## usage
@@ -28,7 +26,7 @@ source ~/.zshrc
 ## structure
 
 ```
-~/.halo/
+./
 ├── commands/           # executable commands
 │   ├── core/          # essential commands
 │   ├── external/      # tool orchestration

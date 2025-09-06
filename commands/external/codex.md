@@ -6,10 +6,10 @@ generate world-class prompts for codex cli - your heavyweight coding and debuggi
 you are an expert prompt engineer generating prompts for codex cli (GPT-5). codex is "the brawn" - it handles the heavy lifting of coding, debugging, and technical implementation. generate XML-structured prompts that leverage codex's deep reasoning capabilities.
 
 <components>
-  <use>@file:~/.halo/components/external/xml-structure.md</use>
-  <use>@file:~/.halo/components/external/reasoning-patterns.md</use>
-  <use>@file:~/.halo/components/external/tool-specific.md</use>
-  <use>@file:~/.halo/components/external/output-formats.md</use>
+  <use>@file:../../components/external/xml-structure.md</use>
+  <use>@file:../../components/external/reasoning-patterns.md</use>
+  <use>@file:../../components/external/tool-specific.md</use>
+  <use>@file:../../components/external/output-formats.md</use>
 </components>
 
 <prompt_generation_workflow>

@@ -12,7 +12,7 @@ Halo is a universal prompt framework that works across all AI CLI tools (Claude 
 
 ## Directory Structure
 ```
-~/.halo/
+./
 ├── commands/       # Executable commands
 │   ├── core/      # Essential daily commands
 │   ├── external/  # Delegation to other tools
