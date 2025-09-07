@@ -44,6 +44,28 @@ Halo is a universal prompt framework that works across all AI CLI tools (Claude 
 - `/external:codex` - Use GPT-5 deep reasoning
 - `/external:gemini` - Use 2M context analysis
 - `/external:cursor` - Use implementation engine
+- `/external:charlie` - Use Charlie (CharlieHelps) for TypeScript tasks
+
+## 🤖 Natural Language Pattern Detection
+
+**IMPORTANT**: Claude automatically detects delegation patterns in natural language.
+
+### Charlie (TypeScript Specialist)
+When the user mentions any of these patterns:
+- "use charlie" (in any case)
+- "ask charlie to"
+- "get charlie to"
+- "have charlie"
+- "charlie should"
+- "charlie can"
+
+Claude will:
+1. Read `/Users/nit/.halo/commands/external/charlie.md`
+2. Follow the charlie directive exactly
+3. Generate optimal XML-structured prompt
+4. Create GitHub issue and provide trigger command
+
+Note: Other tools (Codex, Gemini, Cursor) require explicit commands or tool names to trigger.
 
 ### Integrations
 - `/github` - GitHub operations
