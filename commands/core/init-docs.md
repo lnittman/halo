@@ -41,8 +41,8 @@ docs/
 │       └── *.md        # AI features, agents, workflows
 │
 ├── AGENTS.md           # Root metaprompt explaining the system
+├── CLAUDE.md           # Symlink to AGENTS.md for AI tool compatibility
 ├── README.md           # Documentation index
-├── CLAUDE.md           # Project-specific AI context
 └── glossary.md         # Domain terminology
 ```
 
@@ -56,7 +56,7 @@ docs/
 
 ## AGENTS.md System
 
-Each subdirectory contains an XML-formatted metaprompt:
+Each subdirectory contains an XML-formatted metaprompt. CLAUDE.md files are symlinks to AGENTS.md for compatibility with AI tools that look for CLAUDE.md:
 
 ```xml
 <agent role="[role-name]">
@@ -99,7 +99,7 @@ Each subdirectory contains an XML-formatted metaprompt:
 Ask yourself: **"If I switched from Next.js to SvelteKit, from Convex to Supabase, from React to Vue - would these docs still be 100% valid?"**
 
 - If **yes** → It belongs in docs/
-- If **no** → It belongs elsewhere (README, CLAUDE.md, code comments)
+- If **no** → It belongs in technical documentation outside of docs/
 
 ## Implementation Steps
 
@@ -107,8 +107,9 @@ When you run `/init-docs`, I will:
 
 1. **Check for existing docs/** - Warn if it exists
 2. **Create directory structure** - All subdirectories with proper organization
-3. **Copy AGENTS.md templates** from turbokit if available, or create them fresh
-4. **Initialize base files** - README.md, CLAUDE.md, glossary.md
+3. **Create AGENTS.md templates** with XML metaprompts for each role
+4. **Create CLAUDE.md symlinks** to AGENTS.md in each directory
+5. **Initialize base files** - README.md, glossary.md
 5. **Provide next steps** - Guide you on how to start documenting
 
 ## Usage Examples
@@ -126,7 +127,7 @@ When you run `/init-docs`, I will:
 /init-docs
 # Move technical docs to README files
 # Extract philosophy into docs/
-# Keep implementation details in CLAUDE.md
+# Keep implementation details outside of docs/
 ```
 
 ## Post-Initialization Workflow
