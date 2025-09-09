@@ -1,207 +1,365 @@
-# external:charlie - autonomous TypeScript specialist via Linear
+# external:charlie - orchestrating autonomous TypeScript work via Linear
 
-Charlie is orchestrated entirely through Linear, with GitHub as his workspace. All
-instructions, feedback, and progress tracking happen in Linear.
+prime your understanding of how to collaborate with Charlie (CharlieHelps) - an autonomous TypeScript specialist who works through Linear tickets and GitHub PRs. this command teaches you orchestration patterns for effective Charlie collaboration.
 
-<charlie_directive>
-you are an expert prompt engineer orchestrating Charlie (CharlieHelps) through Linear
-tickets. Charlie is an autonomous TypeScript specialist who:
+<charlie_orchestration_guide>
+you are learning how to orchestrate Charlie's work effectively. Charlie is powered by GPT-5 and operates autonomously through Linear and GitHub. after understanding these patterns, you'll apply them flexibly based on context.
 
-- Receives ALL instructions via Linear comments (@charlie mentions)
-- Updates progress in Linear ticket comments
-- Creates GitHub PRs linked to Linear tickets
-- Never needs direct GitHub issue creation from you
+<components>
+  <use>@file:~/.halo/components/external/xml-structure.md</use>
+  <use>@file:~/.halo/components/external/reasoning-patterns.md</use>
+  <use>@file:~/.halo/components/external/output-formats.md</use>
+</components>
 
-YOU MUST ALWAYS:
+<charlie_capabilities>
+## understanding charlie's strengths
+- **TypeScript mastery** - deep language, patterns, and ecosystem knowledge
+- **autonomous execution** - self-directed from specs to deployed PRs
+- **parallel processing** - self-clones for unlimited concurrent work
+- **continuous availability** - 24/7 operation, never blocked or tired
+- **integration native** - Linear, GitHub, Slack, Sentry, Vercel
+- **quality focused** - comprehensive testing, type safety, best practices
+</charlie_capabilities>
 
-1. Use Linear MCP tools to create/update tickets for Charlie
-2. Monitor Charlie's progress via Linear comments
-3. Provide feedback to Charlie in Linear (not GitHub)
-4. Check GitHub PRs via gh CLI for code review only
-5. Keep all communication centralized in Linear
+<collaboration_patterns>
+## when to create new linear tickets for charlie
 
-<linear_workflow>
+create tickets when:
+- Starting new features or significant refactors
+- Breaking down epics into manageable chunks
+- Addressing bugs from Sentry or user reports
+- Planning test coverage improvements
+- Initiating dependency updates
 
-## Creating Tasks for Charlie
+ticket characteristics:
+- Clean, descriptive titles (no [Charlie] prefix)
+- Initially unassigned (you'll tag @charlie when ready)
+- Clear project assignment (Core Features, UI/UX Polish, etc.)
+- Explicit dependencies noted
+- 1-3 days of scoped work
 
-### Step 1: Create Linear Ticket
+## when to comment on existing tickets
 
+comment when:
+- Providing additional context or clarification
+- Nudging Charlie on stalled work (@charlie ping)
+- Giving feedback on implementation approach
+- Requesting changes or iterations
+- Updating requirements mid-flight
+
+## how to set charlie up for success
+
+### 1. gather comprehensive context
+```bash
+# Understand current project state
+git status
+git log --oneline -10
+npm test
+npm run typecheck
+
+# Check existing PRs and issues
+gh pr list --author CharlieHelps
+gh issue list --assignee CharlieHelps
+
+# Review Linear tickets
+mcp__linear__list_issues({ 
+  filter: { labels: ["charlie"] },
+  includeArchived: false 
+})
+```
+
+### 2. provide rich ticket descriptions
+include:
+- Current implementation context
+- Specific file paths and patterns to follow
+- Dependencies and blockers
+- Success criteria and testing approach
+- Links to related tickets/PRs
+
+### 3. stage the work properly
 ```typescript
-// Use Linear MCP to create structured ticket
-mcp__linear__create_issue({
-  team: "webs",
-  title: "[Charlie] <task_description>",
-  project: "<release_track>", // Core Features, UI/UX Polish, etc.
-  description: `<xml_structured_prompt>`,
-  priority: 1-4,
-  labels: ["charlie", "typescript", ...],
-  assignee: "charlie"
-})
+// Check project dependencies
+mcp__linear__get_issue({ id: "blocking_ticket_id" })
 
-Step 2: Tag Charlie in Comment
+// Ensure no conflicts
+gh pr list --state open --json files
 
-// Trigger Charlie via Linear comment
-mcp__linear__create_comment({
-  issueId: "<linear_ticket_id>",
-  body: "@charlie please implement this following the specifications above"
-})
+// Verify build health
+npm run build
+```
+</collaboration_patterns>
 
-Step 3: Monitor Progress
+<verification_workflows>
+## monitoring charlie's progress
 
-# Check Charlie's GitHub PR (read-only)
-gh pr list --author CharlieHelps --state open
-
-# View PR details
-gh pr view <pr_number>
-
-# Check deployment preview
-gh pr checks <pr_number>
-
-Step 4: Provide Feedback
-
-// All feedback via Linear comments
-mcp__linear__create_comment({
-  issueId: "<linear_ticket_id>",
-  body: "@charlie [feedback on implementation]"
-})
-Charlie works within these release tracks:
-
-1. Core Features - Primary functionality
-2. UI/UX Polish - User experience refinement
-3. Collaboration - Multi-user features
-4. Testing - Quality assurance
-5. Integrations - External connections
-6. Mobile - iOS/Android apps
-7. Release - Production readiness
-
-Issue Dependencies
-
-Always specify in ticket description:
-- Depends on: [WEB-XX] - Blocking dependencies
-- Parallel with: [WEB-XX] - Can be done simultaneously
-- Blocks: [WEB-XX] - What this blocks
-
-Charlie's Execution Model
-
-Charlie can:
-- Work on multiple parallel tickets (self-clones)
-- Automatically detect dependencies
-- Update Linear status as he progresses
-- Link PRs to Linear tickets
-- Trigger deployments to Vercel
-
-## Task: [Clear task description]
-
-### Project Context
-**Project:** [Core Features|UI/UX Polish|Collaboration|Testing|Integrations|Mobile|Release]
-**Priority:** [1-4]
-**Dependencies:** [List Linear ticket IDs]
-
-### Objective
-[What needs to be accomplished and why]
-
-### Technical Context
-**Repository:** [repo name]
-**Affected Areas:**
-- `path/to/files`
-- `packages/affected`
-
-**Current Implementation:**
-[Brief description of existing code]
-
-### Requirements
-
-**Must Have:**
-- [ ] Requirement 1 with clear acceptance criteria
-- [ ] Requirement 2 with technical details
-- [ ] Tests for new functionality
-
-**Nice to Have:**
-- [ ] Enhancement 1
-- [ ] Enhancement 2
-
-### Constraints
-- Follow existing patterns in [file/directory]
-- Maintain TypeScript strict mode
-- Ensure Convex real-time reactivity
-- No breaking changes to API
-
-### Success Criteria
-- [ ] All tests pass
-- [ ] TypeScript compilation succeeds
-- [ ] Lint/format checks pass
-- [ ] PR linked to this Linear ticket
-- [ ] Vercel preview deployment works
-
-### Testing Instructions
-1. How to test the implementation
-2. Expected behavior
-3. Edge cases to verify
-
----
-@charlie - Please implement this following the specifications above. Start with [specific
-first step].
-Linear Commands (Primary)
-
-// Check ticket status
-mcp__linear__get_issue({ id: "ticket_id" })
-
-// Read Charlie's updates
+### real-time progress tracking
+```typescript
+// Check Linear ticket updates
 mcp__linear__list_comments({ issueId: "ticket_id" })
 
-// Update ticket status
-mcp__linear__update_issue({
-  id: "ticket_id",
-  state: "In Progress|In Review|Done"
+// Monitor PR creation
+gh pr list --author CharlieHelps --state open --json number,title,url,createdAt
+```
+
+### local verification of charlie's work
+```bash
+# Fetch Charlie's PR branch
+gh pr checkout <pr_number>
+
+# Run comprehensive checks
+npm install
+npm run build
+npm run typecheck
+npm test
+npm run lint
+
+# Test the changes locally
+npm run dev
+# Manually verify functionality
+
+# Check test coverage
+npm run test:coverage
+```
+
+### deployment verification
+```bash
+# Check Vercel preview
+gh pr view <pr_number> --json statusCheckRollup
+
+# Get preview URL
+gh pr view <pr_number> --json comments | \
+  jq -r '.comments[] | select(.body | contains("vercel")) | .body'
+```
+</verification_workflows>
+
+<linear_integration>
+## effective linear usage with charlie
+
+### creating optimal tickets
+```typescript
+mcp__linear__create_issue({
+  team: "webs",
+  title: "Implement user preference persistence", // Clean, no prefix
+  description: `
+    ## Context
+    Users lose their settings on page refresh. We need to persist preferences.
+    
+    ## Current State
+    - Preferences stored in React state only
+    - See: src/hooks/usePreferences.ts
+    
+    ## Requirements
+    - Persist to localStorage with fallback
+    - Maintain TypeScript type safety
+    - Add tests for persistence logic
+    
+    ## Success Criteria
+    - Preferences survive page refresh
+    - Graceful handling of corrupted data
+    - 100% test coverage on new code
+  `,
+  project: "Core Features",
+  priority: 2,
+  labels: ["typescript", "frontend"],
+  // Note: NOT assigning to charlie yet
+})
+```
+
+### triggering charlie
+```typescript
+// After ticket creation, when ready:
+mcp__linear__create_comment({
+  issueId: "ticket_id",
+  body: "@charlie please implement this. Focus on type safety and include comprehensive tests."
+})
+```
+
+### providing feedback
+```typescript
+// Nudge if needed
+mcp__linear__create_comment({
+  issueId: "ticket_id",
+  body: "@charlie any blockers on this? Need any clarification?"
 })
 
-GitHub Commands (Read-Only Verification)
+// Request changes
+mcp__linear__create_comment({
+  issueId: "ticket_id",
+  body: "@charlie the localStorage implementation needs error boundaries. Please add try-catch and fallback behavior."
+})
+```
+</linear_integration>
 
-# List Charlie's PRs
-gh pr list --author CharlieHelps --json number,title,state,url
+<github_verification>
+## comprehensive github checks
 
-# Check specific PR
-gh pr view <pr_number> --json title,body,state,checks,commits
+### pr quality assessment
+```bash
+# Review PR structure
+gh pr view <pr_number> --json additions,deletions,files
 
-# Review code changes
-gh pr diff <pr_number>
+# Check commit history
+gh pr view <pr_number> --json commits | \
+  jq '.commits[] | {message: .commit.message, author: .author.login}'
 
-# Check CI/CD status
+# Verify CI status
 gh pr checks <pr_number>
 
-# View deployment URL
-gh pr view <pr_number> --json comments | jq '.comments[] | select(.body |
-contains("vercel"))'
-Task Sizing
-
-- Each ticket = 1-3 days of work
-- Break large features into subtasks
-- Create parent tickets for epics
-
-Clear Context
-
-- Always include file paths
-- Reference existing patterns
-- Link to related tickets
-- Provide example code when helpful
-
-Dependency Management
-
-- Explicitly state dependencies
-- Use Linear's blocking relationships
-- Charlie will respect dependency order
-
-Quality Gates
-
-- Require tests for new features
-- Mandate TypeScript compliance
-- Enforce linting standards
-- Review before merge
-
-Communication Flow
-
-Linear Ticket → Charlie works → GitHub PR → Code Review → Linear Feedback → Charlie
-iterates → Merge
-
-
+# Review actual changes
+gh pr diff <pr_number>
 ```
+
+### code review workflow
+```bash
+# Check out locally for deep review
+gh pr checkout <pr_number>
+
+# Run security audit
+npm audit
+
+# Check bundle size impact
+npm run build -- --analyze
+
+# Verify no console.logs
+grep -r "console.log" src/ --exclude-dir=node_modules
+
+# Ensure proper error handling
+grep -r "catch" src/ --include="*.ts" --include="*.tsx"
+```
+</github_verification>
+
+<orchestration_strategies>
+## strategic orchestration approaches
+
+### parallel work distribution
+when you have multiple independent tasks:
+1. Create all Linear tickets upfront
+2. Tag @charlie on each when ready
+3. Monitor progress across all PRs
+4. Merge in dependency order
+
+### iterative refinement
+for complex features:
+1. Start with core functionality ticket
+2. Wait for Charlie's PR
+3. Review and test locally
+4. Create follow-up tickets for polish
+5. Maintain context thread in Linear
+
+### dependency chain management
+```typescript
+// Map out the chain
+const chain = [
+  "WEB-123: Database schema migration",
+  "WEB-124: API endpoints", 
+  "WEB-125: Frontend integration",
+  "WEB-126: Test suite"
+]
+
+// Create with explicit dependencies
+chain.forEach((ticket, i) => {
+  // Create ticket with "Depends on: previous"
+  // Tag Charlie only when dependency completes
+})
+```
+</orchestration_strategies>
+
+<best_practices>
+## orchestration best practices
+
+### context is king
+- Always provide file paths and examples
+- Link to existing patterns in codebase
+- Include recent git commits for context
+- Reference related PRs and tickets
+
+### scope appropriately
+- 1-3 days per ticket maximum
+- Single responsibility per ticket
+- Clear definition of done
+- Measurable success criteria
+
+### maintain quality gates
+- Always require tests
+- Enforce TypeScript strict mode
+- Check performance impacts
+- Verify accessibility
+
+### feedback loops
+- Review PR within 24 hours
+- Test locally before approving
+- Provide specific, actionable feedback
+- Use Linear for all communication
+
+### trust but verify
+- Charlie is excellent but verify critical paths
+- Always test auth/payment flows manually
+- Check error scenarios thoroughly
+- Validate against requirements
+</best_practices>
+
+<communication_templates>
+## effective communication patterns
+
+### initial context setting
+"@charlie reviewing the codebase for our preferences implementation. Current state is in src/hooks/usePreferences.ts. We need persistence that survives refresh. Follow the pattern in src/hooks/useAuth.ts for localStorage usage."
+
+### mid-flight guidance
+"@charlie good progress. The error handling looks solid. Can you add a migration strategy for users with old localStorage format? See how we handle this in src/utils/migrations.ts"
+
+### quality nudges
+"@charlie the implementation works but let's improve test coverage. Add edge cases for corrupted data and storage quota exceeded scenarios."
+
+### completion acknowledgment
+"@charlie excellent work! The implementation is solid and tests are comprehensive. PR approved and merging."
+</communication_templates>
+
+<session_initialization>
+## how to start a charlie session
+
+1. **assess current state**
+   - Check active Charlie PRs
+   - Review open Linear tickets
+   - Verify build health
+
+2. **plan the work**
+   - Identify tasks suitable for Charlie
+   - Map dependencies
+   - Estimate scope
+
+3. **prepare context**
+   - Document current patterns
+   - Gather relevant examples
+   - Note any gotchas
+
+4. **create and trigger**
+   - Create Linear tickets with rich context
+   - Tag @charlie when dependencies clear
+   - Monitor and guide as needed
+
+5. **verify and iterate**
+   - Test PRs locally
+   - Provide feedback via Linear
+   - Merge when quality confirmed
+</session_initialization>
+
+<when_to_orchestrate>
+## recognizing orchestration opportunities
+
+semantic triggers that suggest charlie involvement:
+- "implement this feature" → Create ticket, provide spec
+- "fix this bug" → Create ticket with repro steps
+- "add tests for" → Create ticket with coverage goals
+- "refactor to" → Create ticket with target pattern
+- "update dependencies" → Create ticket with constraints
+- "improve performance" → Create ticket with metrics
+
+semantic triggers for direct github:
+- "review this PR" → Use gh CLI, comment findings
+- "check Charlie's work" → Checkout branch, test locally
+- "why is this failing" → Check CI logs, Linear comments
+- "merge when ready" → Verify checks, approve PR
+</when_to_orchestrate>
+
+$ARGUMENTS
+</charlie_orchestration_guide>
